@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./دستور if در زبان برنامه نویسی سی شارپ_files/sweetalert2.min.css">
+	<link rel="stylesheet" href="./دستور if در زبان برنامه نویسی سی شارپ_files/github.min.css">
+	<link rel="stylesheet" href="./دستور if در زبان برنامه نویسی سی شارپ_files/output.css">
+	<link rel="icon" href="https://learnsource.net/images/logo.svg">
+	<title>دستور if در زبان برنامه نویسی سی شارپ</title>
+	<meta name="googlebot" content="index,follow">
+	<meta name="robots" content="noodp,noydir">
+		<meta name="description">
+		<meta name="Keywords">
+</head>
+<body class="bg-gray-100">
+	<!-- start top Menu -->
+	<section class="bg-white shadow-[0_0.05em_0_#e5e7eb]">
+		<div class="container m-auto px-4">
+		</div>
+	</section>
+	<!-- end top Menu -->
+<div class="container m-auto">
+	<div class="rounded-lg mt-4">
+		<div class="grid grid-cols-12 gap-4">
+			<div class="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-8 xl:col-span-9">
+				<div class=" drop-shadow-sm bg-white p-5 boxText3 text-justify rounded-lg" style=" width: 100%;">
+					<div class="px-5 p-5 pt-0 text-gray-500 myContent2">
+						<h1>دستور if در زبان برنامه نویسی سی شارپ</h1>
+						<div class="green-note">
+<p>زبان برنامه نویسی سی شارپ شامل مجموعه ای از دستورات تصمیم گیری است که به کمک آنها می‌توان جریان برنامه را بر اساس شروط معین مدیریت کرد. در این فصل به دستورات if در زبان برنامه نویسی سی شارپ میپردازیم.</p>
+</div>
+<hr>
+<h2>دستورات شرطی if&nbsp;</h2>
+
+<p>زبان برنامه نویسی سی شارپ شامل مجموعه ای از دستورات تصمیم گیری است که به کمک آنها می‌توان جریان برنامه را بر اساس شروط معین مدیریت کرد.&nbsp;<br>
+زبان سی شارپ شامل دستورات تصمیم گیری زیر است :</p>
+
+<ol>
+	<li>دستور <code>if</code></li>
+	<li>دستور <code>if-else</code></li>
+	<li>دستور <code>switch</code></li>
+	<li>عملگر سه تایی <code>:?</code></li>
+</ol>
+
+<p>در این فصل در مورد دستورات <code>if</code> مطالبی را خواهیم آموخت. قاعده نوشتاری دستور <code>if</code> به شکلی است که در زیر آمده است :</p>
+
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">if</span>(boolean expression)
+{
+    <span class="hljs-comment">// execute this code block if expression evalutes to true</span>
+}</code></pre>
+
+<p>دستور <code>if</code> شامل یک عبارت بولین (صحیح یا ناصحیح) است که به دنبال آن یک یا چند خط کد می‌تواند در بدنه دستور <code>if</code> قرار گیرد. اگر عبارت بولین صحیح ارزیابی شود دستورات نوشته شده در بدنه <code>if</code> اجرا خواهند شد.</p>
+
+<p>همانطور که مشاهده می کنید در نمونه مثال زیر از دستور <code>if</code> استفاده شده است. با توجه به اینکه عبارت بولین اولین دستور <code>if</code> همیشه صحیح است ، دستورات بدنه آن همیشه اجرا خواهند شد. این در حالی است که بدنه دومین دستور <code>if</code> به دلیل عبارت بولین ناصحیح هیچگاه اجرا نخواهد شد.</p>
+
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">using</span> System;
+					
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+{
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>()</span>
+	{
+		<span class="hljs-keyword">if</span>(<span class="hljs-literal">true</span>)
+		{
+			Console.WriteLine(<span class="hljs-string">"This will be displayed"</span>);
+		}
+		
+		<span class="hljs-keyword">if</span>(<span class="hljs-literal">false</span>)
+		{
+			Console.WriteLine(<span class="hljs-string">"This will not be displayed"</span>);
+		}
+	}
+}</code></pre>
+
+<p>خروجی نمونه مثال بالا به شکل زیر است :</p>
+
+<pre><code class="hljs language-undefined">This will be displayed</code></pre>
+
+<p>همانطور که در نمونه مثال بالا بیان شد دستور <code>if</code> شامل یک عبارت بولین (صحیح و یا ناصحیح) است. یک عبارت می توانند مقدار صحیح و ناصحیح را برگرداند. در نمونه مثال زیر از عبارات منطقی به عنوان شرط دستور <code>if</code> استفاده شده است :</p>
+
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">using</span> System;
+					
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+{
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>()</span>
+	{
+		<span class="hljs-built_in">int</span> i = <span class="hljs-number">10</span>, j = <span class="hljs-number">20</span>;
+
+		<span class="hljs-keyword">if</span> (i &gt; j)
+		{
+			Console.WriteLine(<span class="hljs-string">"i is greater than j"</span>);
+		}
+		
+		<span class="hljs-keyword">if</span> (i &lt; j)
+		{
+			Console.WriteLine(<span class="hljs-string">"i is less than j"</span>);
+		}        
+		
+		<span class="hljs-keyword">if</span> (i == j)
+		{
+			Console.WriteLine(<span class="hljs-string">"i is equal to j"</span>);
+		}   
+	}
+}</code></pre>
+
+<p>خروجی نمونه مثال بالا به شکل زیر است :</p>
+
+<pre><code class="hljs language-kotlin">i <span class="hljs-keyword">is</span> less than j</code></pre>
+
+<p>در نمونه مثال بالا عبارت بولین <code>i &lt; j</code> در دومین دستور <code>if</code> صحیح ارزیابی می شود و تنها کدهای موجود در بدنه ی این دستور اجرا خواهند شد. عبارت های اولین و سومین دستور <code>if</code> ، ناصحیح ارزیابی می‌شوند و کدهای موجود در بدنه ی آنها اجرا نخواهند شد.</p>
+
+<hr>
+<h2>دستور if-else</h2>
+
+<p>زبان برنامه نویسی سی شارپ همچنین قسمت دومی را برای دستور <code>if</code> فراهم آورده است. این قسمت <code>else</code> نام دارد. دستور <code>else</code> بعد از بدنه دستور <code>if</code> قرار می گیرد و یا در زنجیره ای از دستورات <code>if</code> و <code>else</code> قبل از دستور if به صورت <code>else-if</code> قرار می‌گیرد. در هر صورت دستور else&nbsp;تنها یک بار می‌تواند در زنجیره دستورات <code>if</code> و <code>else</code> قرار گیرد.<br>
+&nbsp;قاعده نوشتاری برای این دستور به شکل زیر است :</p>
+
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">if</span>(boolean expression)
+{
+    <span class="hljs-comment">// execute this code block if expression evalutes to true</span>
+}
+<span class="hljs-keyword">else</span>
+{
+    <span class="hljs-comment">// always execute this code block when above if expression is false</span>
+}
+</code></pre>
+
+<p>همانطور که در قاعده ی نوشتاری در بالا مشخص است دستور <code>else</code> نمیتواند دارای عبارتی باشد. دستوراتی که در بدنه دستور <code>else</code> قرار گرفته‌اند زمانی که دستور if ناصحیح ارزیابی شود اجرا می‌شوند.</p>
+
+<pre><code class="language-csharp hljs"><span class="hljs-keyword">using</span> System;
+					
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+{
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>()</span>
+	{
+		<span class="hljs-built_in">int</span> i = <span class="hljs-number">10</span>, j = <span class="hljs-number">20</span>;
+
+		<span class="hljs-keyword">if</span> (i &gt; j)
+		{
+			Console.WriteLine(<span class="hljs-string">"i is greater than j"</span>);
+		}
+		<span class="hljs-keyword">else</span>
+		{
+			Console.WriteLine(<span class="hljs-string">"i is either equal to or less than j"</span>);
+		}
+	}
+}</code></pre>
+
+<p>خروجی نمونه مثال فوق به شکل زیر است :</p>
+
+<pre><code class="hljs language-vbnet">i <span class="hljs-built_in">is</span> either equal <span class="hljs-keyword">to</span> <span class="hljs-built_in">or</span> less than j</code></pre>
+
+<hr>
+<h2>دستور else-if</h2>
+
+<p>دستور <code>if</code> می تواند بلافاصله بعد از دستور <code>else</code> قرار گیرد. در این صورت می توانید در این قسمت شرط دیگری را ارزیابی کنید.</p>
+
+<pre><code class="language-csharp hljs"><span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"><span class="hljs-built_in">string</span>[] args</span>)</span>
+{
+    <span class="hljs-built_in">int</span> i = <span class="hljs-number">10</span>, j = <span class="hljs-number">20</span>;
+
+    <span class="hljs-keyword">if</span> (i &gt; j)
+    {
+        Console.WriteLine(<span class="hljs-string">"i is greater than j"</span>);
+    }
+    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (i &lt; j)
+    {
+        Console.WriteLine(<span class="hljs-string">"i is less than j"</span>);
+    }
+    <span class="hljs-keyword">else</span>
+    {
+        Console.WriteLine(<span class="hljs-string">"i is equal to j"</span>);
+    }
+     
+}</code></pre>
+
+<p>خروجی نمونه مثال بالا به شکل زیر است :</p>
+
+<pre><code class="hljs language-kotlin">i <span class="hljs-keyword">is</span> less than j</code></pre>
+
+<p>شما می توانید از چندین دستور <code>else if</code> در یک زنجیره ی دستور <code>if</code> استفاده کنید. زمانی که بدنه ی دستورات <code>if</code> تنها دارای یک خط باشند میتوان براکت ها را حذف کرد.</p>
+
+<pre><code class="language-csharp hljs"><span class="hljs-built_in">int</span> i = <span class="hljs-number">10</span>, j = <span class="hljs-number">20</span>;
+
+<span class="hljs-keyword">if</span> (i &gt; j)
+    Console.WriteLine(<span class="hljs-string">"i is greater than j"</span>);
+<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (i &lt; j)
+    Console.WriteLine(<span class="hljs-string">"i is less than j"</span>);
+<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (i == j)
+    Console.WriteLine(<span class="hljs-string">"i is equal to j"</span>);
+</code></pre>
+
+<p>خروجی به شکل زیر است :</p>
+
+<pre><code class="hljs language-kotlin">i <span class="hljs-keyword">is</span> less than j</code></pre>
+
+<hr>
+<h2>دستورات if تو در تو</h2>
+
+<p>زبان برنامه نویسی سی شارپ به ما اجازه می دهد که دستورات <code>if</code> را به صورت تو در تو استفاده کنیم. در نمونه مثال زیر می توان این دستورات را مشاهده نمود :</p>
+
+<pre><code class="language-csharp hljs"><span class="hljs-built_in">int</span> i = <span class="hljs-number">10</span>;
+
+<span class="hljs-keyword">if</span> (i &gt; <span class="hljs-number">0</span>)
+{
+    <span class="hljs-keyword">if</span> (i &lt;= <span class="hljs-number">100</span>)
+    {
+        Console.WriteLine(<span class="hljs-string">"i is positive number less than 100"</span>);
+    }
+    <span class="hljs-keyword">else</span> 
+    {
+        Console.WriteLine(<span class="hljs-string">"i is positive number greater than 100"</span>);
+    }
+                
+}</code></pre>
+
+<p>خروجی به شکل زیر است :</p>
+
+<pre><code class="hljs language-kotlin">i <span class="hljs-keyword">is</span> positive number less than <span class="hljs-number">100</span></code></pre>
+
+<div class="ls-note3">
+<p>&nbsp;به خاطر داشته باشید که</p>
+
+<ul>
+	<li>دستورات if-else جریان برنامه را بر اساس ارزیابی عبارت بولین دستور if کنترل می‌کنند.</li>
+	<li>دستورات شرطی جایگزین باید با یک دستور جایگزین آغاز شده و به دنبال آن از دستورات else و یا else if استفاده شود.</li>
+	<li>تنها یک دستور else می‌تواند در یک زنجیره if-else قرار بگیرد.</li>
+	<li>می توان چندین دستور else-if را در یک زنجیره if-else استفاده کرد.</li>
+	<li>&nbsp;در زبان سی شارپ می توان به راحتی دستورات if را به صورت تو در تو به کار برد.<br>
+	&nbsp;</li>
+</ul>
+</div>
+
+					</div>
+				</div>
+					
+
+			</div>
+			
+		</div>
+
+	</div>
+</div>
+
+
+
+</body></html>
