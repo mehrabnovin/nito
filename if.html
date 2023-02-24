@@ -1,0 +1,765 @@
+<!--Complate-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>if & else & elif</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords"
+
+	<link href="favicon.ico" rel="shortcut icon">
+
+	<link href="./content_files/css" rel="stylesheet" type="text/css">
+	<link href="./content_files/css(1)" rel="stylesheet" type="text/css">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="./content_files/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="./content_files/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="./content_files/bootstrap.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="./content_files/owl.carousel.min.css">
+	<link rel="stylesheet" href="./content_files/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="./content_files/style.css">
+	<!-- Modernizr JS -->
+	<script src="./content_files/modernizr-2.6.2.min.js.download"></script>
+
+	<style>
+		.nazm {
+			direction: ltr;
+		}
+		h2,h1{
+			font-family: 'b titr';
+		}
+		p{
+			font-family: 'b nazanin';
+			color: rgba(17, 21, 26, 0.863);
+		}
+	</style>
+
+</head>
+
+<body dir="rtl">
+
+	<div id="fh5co-page">
+		<a href="work.html#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+		<aside id="fh5co-aside" role="complementary" class="border js-fullheight" style="height: 568px;">
+
+			<h1 id="fh5co-logo"><a href="index.html"><img src="./content_files/logo.png"
+						alt=""></a></h1>
+						<nav id="fh5co-main-menu" role="navigation" style="position:absolute;margin-right: 30%;">
+							<ul>
+								<li><a style="font-family:'b titr';" href="index.html">صفحه اصلی</a></li>
+								<li><a style="font-family:'b titr';" href="portfolio.html">زبان ها</a></li>
+								<li><a style="font-family:'b titr';" href="about.html">درباره</a></li>
+								<li><a style="font-family:'b titr';" href="contact.html">موضوع ها</a></li>
+							</ul>
+						</nav>
+			
+						<!-- class="fh5co-active" -->
+
+			<div class="fh5co-footer">
+				<p><small>Developed by mehrabnovin </small></p>
+				<ul>
+					<li><a href="work.html"><i class="icon-facebook"></i></a></li>
+					<li><a href="work.html"><i class="icon-twitter"></i></a></li>
+					<li><a href="work.html"><i class="icon-instagram"></i></a></li>
+					<li><a href="work.html"><i class="icon-linkedin"></i></a></li>
+				</ul>
+			</div>
+
+		</aside>
+
+
+		<div id="fh5co-main">
+
+			<div class="fh5co-narrow-content">
+				<div class="row">
+
+					<DIv class="ali">
+						<div class="col-md-12 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+							<figure class="text-center">
+								<p style="text-align:center;">
+									<img src="./images/unnamed.png" alt=""
+										class="img-responsive" style="margin-right: 100%;border-radius: 20%;">
+								</p>
+							</figure>
+						</div>
+
+						<div class="" data-animate-effect="fadeInLeft">
+
+							<div class="row" style="float: right; text-align: left;">
+								<h1 style="direction: rtl; text-align: center;">if, else در زبان C#</h1>
+								<p>&nbsp;</p>
+								<p>&nbsp;</p>
+
+								<section class="bg-white shadow-[0_0.05em_0_#e5e7eb]">
+									<div class="container m-auto px-4">
+									</div>
+								</section>
+								<!-- end top Menu -->
+								<div class="container m-auto">
+									<div class="rounded-lg mt-4">
+										<div class="grid grid-cols-12 gap-4">
+											<div
+												class="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-8 xl:col-span-9">
+												<div class=" drop-shadow-sm bg-white p-5 boxText3 text-justify rounded-lg"
+													style=" width: 100%;">
+													<div class="px-5 p-5 pt-0 text-gray-500 myContent2"
+														style="width: 88%;">
+														<h1>دستور if در زبان برنامه نویسی سی شارپ</h1>
+														<div class="green-note">
+															<!--------------------------------------------------------->
+
+															<center style="direction: rtl;">
+																<p>زبان برنامه نویسی سی شارپ شامل مجموعه ای از دستورات
+																	تصمیم گیری است که به کمک آنها می‌توان جریان برنامه
+																	را بر اساس شروط معین مدیریت کرد. در این فصل به
+																	دستورات if در زبان برنامه نویسی سی شارپ میپردازیم.
+																</p>
+															</center>
+														</div>
+														<hr>
+														<h2>دستورات شرطی if&nbsp;</h2>
+
+														<p>زبان برنامه نویسی سی شارپ شامل مجموعه ای از دستورات تصمیم
+															گیری است که به کمک آنها می‌توان جریان برنامه را بر اساس شروط
+															معین مدیریت کرد.&nbsp;<br>
+															زبان سی شارپ شامل دستورات تصمیم گیری زیر است :</p>
+
+														<ol>
+															<li>دستور <code>if</code></li>
+															<li>دستور <code>if-else</code></li>
+															<li>دستور <code>switch</code></li>
+															<li>عملگر سه تایی <code>:?</code></li>
+														</ol>
+
+														<p>در این فصل در مورد دستورات <code>if</code> مطالبی را خواهیم
+															آموخت. قاعده نوشتاری دستور <code>if</code> به شکلی است که در
+															زیر آمده است :</p>
+
+														<pre class="nazm"><code class="language-csharp hljs"><span class="hljs-keyword">if</span>(boolean expression)
+						{
+							<span class="hljs-comment">// execute this code block if expression evalutes to true</span>
+						}</code></pre>
+
+														<p>دستور <code>if</code> شامل یک عبارت بولین (صحیح یا ناصحیح)
+															است که به دنبال آن یک یا چند خط کد می‌تواند در بدنه دستور
+															<code>if</code> قرار گیرد. اگر عبارت بولین صحیح ارزیابی شود
+															دستورات نوشته شده در بدنه <code>if</code> اجرا خواهند شد.
+														</p>
+
+														<p>همانطور که مشاهده می کنید در نمونه مثال زیر از دستور
+															<code>if</code> استفاده شده است. با توجه به اینکه عبارت
+															بولین اولین دستور <code>if</code> همیشه صحیح است ، دستورات
+															بدنه آن همیشه اجرا خواهند شد. این در حالی است که بدنه دومین
+															دستور <code>if</code> به دلیل عبارت بولین ناصحیح هیچگاه اجرا
+															نخواهد شد.</p>
+
+														<pre class="nazm"><code class="language-csharp hljs"><span class="hljs-keyword">using</span> System;
+											
+						<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+						{
+							<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>()</span>
+							{
+								<span class="hljs-keyword">if</span>(<span class="hljs-literal">true</span>)
+								{
+									Console.WriteLine(<span class="hljs-string">"This will be displayed"</span>);
+								}
+								
+								<span class="hljs-keyword">if</span>(<span class="hljs-literal">false</span>)
+								{
+									Console.WriteLine(<span class="hljs-string">"This will not be displayed"</span>);
+								}
+							}
+						}</code></pre>
+
+														<p>خروجی نمونه مثال بالا به شکل زیر است :</p>
+
+														<pre
+															class="nazm"><code class="hljs language-undefined">This will be displayed</code></pre>
+
+														<p>همانطور که در نمونه مثال بالا بیان شد دستور <code>if</code>
+															شامل یک عبارت بولین (صحیح و یا ناصحیح) است. یک عبارت می
+															توانند مقدار صحیح و ناصحیح را برگرداند. در نمونه مثال زیر از
+															عبارات منطقی به عنوان شرط دستور <code>if</code> استفاده شده
+															است :</p>
+
+														<pre class="nazm"><code class="language-csharp hljs"><span class="hljs-keyword">using</span> System;
+											
+						<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+						{
+							<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>()</span>
+							{
+								<span class="hljs-built_in">int</span> i = <span class="hljs-number">10</span>, j = <span class="hljs-number">20</span>;
+						
+								<span class="hljs-keyword">if</span> (i &gt; j)
+								{
+									Console.WriteLine(<span class="hljs-string">"i is greater than j"</span>);
+								}
+								
+								<span class="hljs-keyword">if</span> (i &lt; j)
+								{
+									Console.WriteLine(<span class="hljs-string">"i is less than j"</span>);
+								}        
+								
+								<span class="hljs-keyword">if</span> (i == j)
+								{
+									Console.WriteLine(<span class="hljs-string">"i is equal to j"</span>);
+								}   
+							}
+						}</code></pre>
+
+														<p>خروجی نمونه مثال بالا به شکل زیر است :</p>
+
+														<pre
+															class="nazm"><code class="hljs language-kotlin">i <span class="hljs-keyword">is</span> less than j</code></pre>
+
+														<p>در نمونه مثال بالا عبارت بولین <code>i &lt; j</code> در دومین
+															دستور <code>if</code> صحیح ارزیابی می شود و تنها کدهای موجود
+															در بدنه ی این دستور اجرا خواهند شد. عبارت های اولین و سومین
+															دستور <code>if</code> ، ناصحیح ارزیابی می‌شوند و کدهای موجود
+															در بدنه ی آنها اجرا نخواهند شد.</p>
+
+														<hr>
+														<h2>دستور if-else</h2>
+
+														<p>زبان برنامه نویسی سی شارپ همچنین قسمت دومی را برای دستور
+															<code>if</code> فراهم آورده است. این قسمت <code>else</code>
+															نام دارد. دستور <code>else</code> بعد از بدنه دستور
+															<code>if</code> قرار می گیرد و یا در زنجیره ای از دستورات
+															<code>if</code> و <code>else</code> قبل از دستور if به صورت
+															<code>else-if</code> قرار می‌گیرد. در هر صورت دستور
+															else&nbsp;تنها یک بار می‌تواند در زنجیره دستورات
+															<code>if</code> و <code>else</code> قرار گیرد.<br>
+															&nbsp;قاعده نوشتاری برای این دستور به شکل زیر است :</p>
+
+														<pre class="nazm"><code class="language-csharp hljs"><span class="hljs-keyword">if</span>(boolean expression)
+						{
+							<span class="hljs-comment">// execute this code block if expression evalutes to true</span>
+						}
+						<span class="hljs-keyword">else</span>
+						{
+							<span class="hljs-comment">// always execute this code block when above if expression is false</span>
+						}
+						</code></pre>
+
+														<p>همانطور که در قاعده ی نوشتاری در بالا مشخص است دستور
+															<code>else</code> نمیتواند دارای عبارتی باشد. دستوراتی که در
+															بدنه دستور <code>else</code> قرار گرفته‌اند زمانی که دستور
+															if ناصحیح ارزیابی شود اجرا می‌شوند.</p>
+
+														<pre class="nazm"><code class="language-csharp hljs"><span class="hljs-keyword">using</span> System;
+											
+						<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+						{
+							<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>()</span>
+							{
+								<span class="hljs-built_in">int</span> i = <span class="hljs-number">10</span>, j = <span class="hljs-number">20</span>;
+						
+								<span class="hljs-keyword">if</span> (i &gt; j)
+								{
+									Console.WriteLine(<span class="hljs-string">"i is greater than j"</span>);
+								}
+								<span class="hljs-keyword">else</span>
+								{
+									Console.WriteLine(<span class="hljs-string">"i is either equal to or less than j"</span>);
+								}
+							}
+						}</code></pre>
+
+														<p>خروجی نمونه مثال فوق به شکل زیر است :</p>
+
+														<pre
+															class="nazm"><code class="hljs language-vbnet">i <span class="hljs-built_in">is</span> either equal <span class="hljs-keyword">to</span> <span class="hljs-built_in">or</span> less than j</code></pre>
+
+														<hr>
+														<h2>دستور else-if</h2>
+
+														<p>دستور <code>if</code> می تواند بلافاصله بعد از دستور
+															<code>else</code> قرار گیرد. در این صورت می توانید در این
+															قسمت شرط دیگری را ارزیابی کنید.</p>
+
+														<pre class="nazm"><code class="language-csharp hljs"><span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"><span class="hljs-built_in">string</span>[] args</span>)</span>
+						{
+							<span class="hljs-built_in">int</span> i = <span class="hljs-number">10</span>, j = <span class="hljs-number">20</span>;
+						
+							<span class="hljs-keyword">if</span> (i &gt; j)
+							{
+								Console.WriteLine(<span class="hljs-string">"i is greater than j"</span>);
+							}
+							<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (i &lt; j)
+							{
+								Console.WriteLine(<span class="hljs-string">"i is less than j"</span>);
+							}
+							<span class="hljs-keyword">else</span>
+							{
+								Console.WriteLine(<span class="hljs-string">"i is equal to j"</span>);
+							}
+							 
+						}</code></pre>
+
+														<p>خروجی نمونه مثال بالا به شکل زیر است :</p>
+
+														<pre
+															class="nazm"><code class="hljs language-kotlin">i <span class="hljs-keyword">is</span> less than j</code></pre>
+
+														<p>شما می توانید از چندین دستور <code>else if</code> در یک
+															زنجیره ی دستور <code>if</code> استفاده کنید. زمانی که بدنه ی
+															دستورات <code>if</code> تنها دارای یک خط باشند میتوان براکت
+															ها را حذف کرد.</p>
+
+														<pre class="nazm"><code class="language-csharp hljs"><span class="hljs-built_in">int</span> i = <span class="hljs-number">10</span>, j = <span class="hljs-number">20</span>;
+						
+						<span class="hljs-keyword">if</span> (i &gt; j)
+							Console.WriteLine(<span class="hljs-string">"i is greater than j"</span>);
+						<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (i &lt; j)
+							Console.WriteLine(<span class="hljs-string">"i is less than j"</span>);
+						<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (i == j)
+							Console.WriteLine(<span class="hljs-string">"i is equal to j"</span>);
+						</code></pre>
+
+														<p>خروجی به شکل زیر است :</p>
+
+														<pre
+															class="nazm"><code class="hljs language-kotlin">i <span class="hljs-keyword">is</span> less than j</code></pre>
+
+														<hr>
+														<h2>دستورات if تو در تو</h2>
+
+														<p>زبان برنامه نویسی سی شارپ به ما اجازه می دهد که دستورات
+															<code>if</code> را به صورت تو در تو استفاده کنیم. در نمونه
+															مثال زیر می توان این دستورات را مشاهده نمود :</p>
+
+														<pre class="nazm"><code class="language-csharp hljs"><span class="hljs-built_in">int</span> i = <span class="hljs-number">10</span>;
+						
+						<span class="hljs-keyword">if</span> (i &gt; <span class="hljs-number">0</span>)
+						{
+							<span class="hljs-keyword">if</span> (i &lt;= <span class="hljs-number">100</span>)
+							{
+								Console.WriteLine(<span class="hljs-string">"i is positive number less than 100"</span>);
+							}
+							<span class="hljs-keyword">else</span> 
+							{
+								Console.WriteLine(<span class="hljs-string">"i is positive number greater than 100"</span>);
+							}
+										
+						}</code></pre>
+
+														<p>خروجی به شکل زیر است :</p>
+
+														<pre
+															class="nazm"><code class="hljs language-kotlin">i <span class="hljs-keyword">is</span> positive number less than <span class="hljs-number">100</span></code></pre>
+
+														<div class="ls-note3">
+															<p>&nbsp;به خاطر داشته باشید که</p>
+
+															<ul>
+																<li>دستورات if-else جریان برنامه را بر اساس ارزیابی
+																	عبارت بولین دستور if کنترل می‌کنند.</li>
+																<li>دستورات شرطی جایگزین باید با یک دستور جایگزین آغاز
+																	شده و به دنبال آن از دستورات else و یا else if
+																	استفاده شود.</li>
+																<li>تنها یک دستور else می‌تواند در یک زنجیره if-else
+																	قرار بگیرد.</li>
+																<li>می توان چندین دستور else-if را در یک زنجیره if-else
+																	استفاده کرد.</li>
+																<li>&nbsp;در زبان سی شارپ می توان به راحتی دستورات if را
+																	به صورت تو در تو به کار برد.<br>
+																	&nbsp;</li>
+															</ul>
+														</div>
+
+													</div>
+												</div>
+
+
+											</div>
+
+										</div>
+
+									</div>
+								</div>
+
+
+
+
+							</div>
+
+
+							<!---------------------------->
+							<div class="col-md-3 col-md-pull-9 fh5co-services">
+								ُ </div>
+
+
+
+						</div>
+					</div>
+
+					<!----------------------------------------------------------------------------------------------------------------------------->
+					<!--PYTHON-->
+					<div class="col-md-12 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+						<figure class="text-center">
+							<center>
+								<img src="./images/download.png" width="600px" alt=""
+									class="img-responsive" style="border-radius: 20%;margin-right: 70%;">
+							</center>
+						</figure>
+					</div>
+						<h1 style="float: left;">if,else,elif در زبان python </h1>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<!---->
+					<div id="row">
+						<!---->
+						<div id="__layout">
+							<div><svg width="0" height="0" class="position-absolute">
+									<defs>
+										<clippath id="header-button-mask-path-rtl" clipPathUnits="objectBoundingBox">
+											<path
+												d="M.94,0,.06.067A.063.063,0,0,0,0,.133V.867A.063.063,0,0,0,.06.933L.94,1A.063.063,0,0,0,1,.933V.067A.063.063,0,0,0,.94,0Z">
+											</path>
+										</clippath>
+										<clippath id="header-button-mask-path-ltr" clipPathUnits="objectBoundingBox">
+											<path
+												d="M.06,0,.94.067A.063.063,0,0,1,1,.133V.867A.063.063,0,0,1,.94.933L.06,1A.063.063,0,0,1,0,.933V.067A.063.063,0,0,1,.06,0Z">
+											</path>
+										</clippath>
+										<clippath id="card-info-path-ltr" clipPathUnits="objectBoundingBox">
+											<path
+												d="M.1,0H.9A.092.092,0,0,1,1,.086V.759A.183.183,0,0,1,.808.931L.1,1A.092.092,0,0,1,0,.914V.086A.092.092,0,0,1,.1,0Z">
+											</path>
+										</clippath>
+										<clippath id="card-info-path-rtl" clipPathUnits="objectBoundingBox">
+											<path
+												d="M.9,0H.1A.092.092,0,0,0,0,.086V.759A.183.183,0,0,0,.192.931L.9,1A.092.092,0,0,0,1,.914V.086A.092.092,0,0,0,.9,0Z">
+											</path>
+										</clippath>
+										<clippath id="card-info-path-center" clipPathUnits="objectBoundingBox">
+											<path
+												d="M.047,0H.953C.979,0,1,.039,1,.086V.844C1,.891.979.93.953.93L.5,1,.047.93C.021.93,0,.891,0,.844V.086C0,.039.021,0,.047,0Z">
+											</path>
+										</clippath>
+										<clippath id="glossary-card-hover-mask-path" clipPathUnits="objectBoundingBox">
+											<path
+												d="M.071.032.929,0A.067.067,0,0,1,1,.062V.9A.067.067,0,0,1,.94.972L.071,1C.032,1,0,.98,0,.945V.1A.073.073,0,0,1,.071.032Z">
+											</path>
+										</clippath>
+										<clippath id="post-item-img-mask-path" clipPathUnits="objectBoundingBox">
+											<path
+												d="M.9-16.038l-.746.108C.027-15.9,0-16.111,0-16.2v-.726H1v.726C1-16.111.957-16.038.9-16.038Z"
+												transform="translate(0 16.928)"></path>
+										</clippath>
+										<clippath id="article-sidebar-img-mask-path" clipPathUnits="objectBoundingBox">
+											<path
+												d="M.208.082C.363.047.737,0,.737,0A.263.263,0,0,1,1,.263V.645C1,.79.961.863.737.921L.263,1A.263.263,0,0,1,0,.737V.411A.3.3,0,0,1,.208.082Z">
+											</path>
+										</clippath>
+										<clippath id="entity-type-wrapper-mask-path" clipPathUnits="objectBoundingBox">
+											<path
+												d="M.8,0H.234A.234.234,0,0,0,0,.234V.6A.252.252,0,0,0,.164.833l.459.15a.3.3,0,0,0,.407-.3V.234A.234.234,0,0,0,.8,0Z">
+											</path>
+										</clippath>
+										<clippath id="hot-pen-img-first-bg" clipPathUnits="objectBoundingBox">
+											<path
+												d="M.962.023.072,0C.011,0,0,.058,0,.119V.826C0,.857.033.91.054.91L.865,1C.94,1,1,.91,1,.8V.081C1,.049.983.023.962.023Z">
+											</path>
+										</clippath>
+										<clippath id="hot-pen-img-second-bg" clipPathUnits="objectBoundingBox">
+											<path
+												d="M.038.023.928,0C.989,0,1,.058,1,.119V.826C1,.857.967.91.946.91L.135,1C.06,1,0,.91,0,.8V.081C0,.049.017.023.038.023Z">
+											</path>
+										</clippath>
+										<clippath id="hot-pen-user-img-bg" clipPathUnits="objectBoundingBox">
+											<path
+												d="M.208.082C.363.047.737,0,.737,0A.263.263,0,0,1,1,.263V.645C1,.79.961.863.737.921L.263,1A.263.263,0,0,1,0,.737V.411A.3.3,0,0,1,.208.082Z">
+											</path>
+										</clippath>
+										<clippath id="hot-pen-card-text-bg" clipPathUnits="objectBoundingBox">
+											<path
+												d="M.038.975.928,1C.989,1,1,.94,1,.879V.236C1,.2.967.088.946.088L.135,0C.034,0,0,.088,0,.2V.9C0,.93.017.975.038.975Z"
+												transform="translate(0 0.002)"></path>
+										</clippath>
+										<clippath id="hot-pen-card-img-bg" clipPathUnits="objectBoundingBox">
+											<path
+												d="M.962.975.072,1C.011,1,0,.94,0,.879V.236C0,.2.033.088.054.088L.865,0C.966,0,1,.088,1,.2V.9C1,.93.983.975.962.975Z">
+											</path>
+										</clippath>
+										<clippath id="hot-pens-bg" clipPathUnits="objectBoundingBox">
+											<path
+												d="M0,.071V.545Q0,.563,0,.579H0V.73C0,.884.045,1,.131,1L1,.929V.249H1C.995.106.951,0,.869,0Z"
+												transform="translate(1 1) rotate(180)"></path>
+										</clippath>
+										<clippath id="plus-newbie-card-author-background"
+											clipPathUnits="objectBoundingBox">
+											<path
+												d="M.133.067.8,0A.2.2,0,0,1,1,.2L.933.867A.133.133,0,0,1,.8,1H.133A.133.133,0,0,1,0,.867V.2A.133.133,0,0,1,.133.067Z">
+											</path>
+										</clippath>
+										<clippath id="profile-bookmark-collection" clipPathUnits="objectBoundingBox">
+											<path
+												d="M.9-38.027l-.746.1C.027-37.9,0-38.093,0-38.175v-.605c0-.086.015-.147.1-.147H.9c.062,0,.1.023.1.147v.605C1-38.093.968-38.04.9-38.027Z"
+												transform="translate(0 38.928)"></path>
+										</clippath>
+										<clippath id="article-badge-background" clipPathUnits="objectBoundingBox">
+											<path
+												d="M2.114,0h.762c.066,0,.119.014.119.031V.969c0,.017-.053.03-.119.031l-.04,0L2.519.97H2.471L2.153,1l-.04,0C2.048,1,1.995.986,1.994.969V.031c0-.017.054-.03.119-.031Z"
+												transform="translate(1 -1.994) rotate(90)"></path>
+										</clippath>
+									</defs>
+								</svg>
+								<div class="sa-header"> </div>
+								<div>
+									<div data-v-b7ce52d4="" class="course-section-page">
+										<!---->
+										<div data-v-b7ce52d4="" class="position-relative">
+											<div data-v-b7ce52d4="" class="container">
+												<!---->
+												<div data-v-b7ce52d4="" class="sa-article">
+													<div class="row">
+														<div class="column-margin-animation col-lg-8 col-12 sidebar-wrapper-margin-right section-entity-column-margin"
+															style="width: 88%;float: right;">
+															<div class="position-relative">
+																<article class="article-content article-with-hljs">
+																	<p>در آموزش قبل با نحوۀ استفاده از دستور <code
+																			class="custom-inline-code">if</code> آشنا
+																		شدیم و دیدیم که این دستور شرطی&nbsp;به صورت
+																		تحت‌الفظی بدین صورت بیان می‌شود که «اگر عبارت x
+																		درست باشد، آنگاه y اجرا می‌شود.» با این حال،
+																		بارها برای‌مان پیش آمده است که در زمان
+																		تصمیم‌گیری در مورد انجام کاری تحت شرایطی خاص به
+																		حالت بالعکس نیز فکر می‌کنیم و سناریو خاصی را
+																		برای آن در نظر می‌گیریم. برای مثال، یک سناریوی
+																		فرضی را در نظر می‌گیریم که در آن می‌گوییم «اگر
+																		عجله داشته باشم با تاکسی رفت‌وآمد می‌کنم و در
+																		غیر این صورت از اتوبوس استفاده می‌کنم.» &nbsp;
+																	</p>
+																	<p>در فرآیند توسعهٔ نرم‌افزار نیز موارد بسیاری پیش
+																		می‌آید که برخی دستورات خاص در صورت برقراری شرطی
+																		اجرا می‌شوند و در غیر این صورت نیاز است تا
+																		مجموعۀ دیگری از دستورات اجرا شوند که در زبان
+																		برنامه‌نویسی پایتون این الگوریتم را با دستور
+																		مرکب چندبندی تحت عنوان <code
+																			class="custom-inline-code">if...else</code>
+																		پیاده‌سازی می‌کنیم که فرم کلی کدنویسی این دستور
+																		مرکب بدین صورت می‌باشد:</p>
+																	<pre class="line-numbers nazm language-python"><code class="hljs"><span class="hljs-keyword">if</span> conditions:
+    <span class="hljs-comment"># statement 1</span>
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-comment"># statement 2</span>
+</code></pre>
+																	<p>توجه داشته باشیم که سربند <code
+																			class="custom-inline-code">if</code> و <code
+																			class="custom-inline-code">else</code> هر دو
+																		در یک بلوک قرار دارند و بلوک کدهای بدنۀ <code
+																			class="custom-inline-code">else</code> همچون
+																		دستورات بدنۀ <code
+																			class="custom-inline-code">if</code> نسبت به
+																		سربند آن تورفتگی دارند. برای مثال، برنامۀ زیر را
+																		در نظر می‌گیریم:</p>
+																	<pre class="line-numbers nazm language-python"><code class="hljs"><span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> <span class="hljs-number">1</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"True"</span>)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"False"</span>)
+</code></pre>
+																	<p>همان‌طور که در آموزش‌های گذشته بیان کردیم، مفسر
+																		پایتون عدد یک را برابر با مقدار <code
+																			class="custom-inline-code">True</code>
+																		ارزیابی می‌کند و بنابراین دستور <code
+																			class="custom-inline-code">not 1</code>
+																		مقدار بولینی معادل <code
+																			class="custom-inline-code">False</code>
+																		ارزیابی می‌شود بدین معنی که نتیجۀ بررسی دستور
+																		<code class="custom-inline-code">if</code> برابر
+																		با <code class="custom-inline-code">False</code>
+																		می‌باشد و می‌دانیم که بدنۀ این شرط تنها در صورتی
+																		اجرا می‌شود که مقدار آن برابر با <code
+																			class="custom-inline-code">True</code>
+																		ارزیابی شود که از همین روی مفسر پایتون به سراغ
+																		بدنۀ <code
+																			class="custom-inline-code">else</code> رفته
+																		و دستورات داخل آن را اجرا می‌کند. حال اسکریپت
+																		فوق را در فایلی به نام <code
+																			class="custom-inline-code">ifElse.py</code>
+																		ذخیره کرده و آن را اجرا می‌کنیم که در نتیجه
+																		استرینگ «False» در خروجی چاپ خواهد شد:</p>
+																	<pre
+																		class="language-bash nazm"><code class="hljs">False</code></pre>
+																	<p>حال قصد داریم تا دستورات شرطی&nbsp;پیچیده‌تری
+																		پیاده‌سازی کنیم بدین صورت که شرایط مختلفی از
+																		مسئله را مد نظر قرار می‌دهیم و به ازای رخ دادن
+																		هر یک از شرایط، یکسری تسک خاص انجام می‌دهیم.
+																		برای آشنایی با نحوۀ پیاده‌سازی چنین مثالی، کد
+																		زیر را مد نظر قرار خواهیم داد:</p>
+																	<pre class="line-numbers nazm language-python"><code class="hljs">foodstuff = <span class="hljs-built_in">input</span>(<span class="hljs-string">"Please enter your choice(rice,cheese,egg)--&gt;"</span>)
+<span class="hljs-keyword">if</span> foodstuff == <span class="hljs-string">"rice"</span>:
+	<span class="hljs-built_in">print</span>(<span class="hljs-string">"It costs 10000 Tomans per Kilo."</span>)
+<span class="hljs-keyword">elif</span> foodstuff == <span class="hljs-string">"cheese"</span>:
+	<span class="hljs-built_in">print</span>(<span class="hljs-string">"It costs 5000 Tomans."</span>)
+<span class="hljs-keyword">elif</span> foodstuff == <span class="hljs-string">"egg"</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"It costs 500 Tomans"</span>)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"I don't have in stock!"</span>)</code></pre>
+																	<p>در برنامۀ فوق از کاربر درخواست کرده‌ایم تا نام یک
+																		مادۀ غذایی را وارد کند، آنگاه مفسر پایتون بر
+																		اساس ورودی کاربر باید تصمیم بگیرد که چه پیغامی
+																		در معرض دید او قرار دهد. در واقع، مفسر پایتون در
+																		ابتدا نام مادۀ غذایی را از کاربر گرفته و آن را
+																		در متغیر <code
+																			class="custom-inline-code">foodstuff</code>
+																		نگهداری می‌کند.</p>
+
+																	به خاطر داشته باشید
+																	در یک دستور مرکب شرطی به این صورت، بند دستور if
+																	حتماً باید وجود داشته باشد اما نوشتن بندهای elif و
+																	else کاملاً دلخواه است و در صورت نیاز می‌توان آن‌ها
+																	را در برنامه وارد و یا از آن حذف کرد. همچنین
+																	دستورهای elif همیشه بعد از دستور if و پیش از دستور
+																	else قرار می‌گیرند.
+
+																	<p>در ادامۀ تفسیر کد فوق باید بگوییم که مفسر پایتون
+																		به سراغ اجرای دستور <code
+																			class="custom-inline-code">if</code> می‌رود
+																		که اگر شرط این دستور برقرار باشد یا به عبارتی
+																		کاربر کلمۀ «rice» را وارد کرده باشد استرینگ «.It
+																		costs <span
+																			style="font-family: IRANSans;">10000</span>
+																		Tomans per Kilo» را در خروجی چاپ می‌کند اما اگر
+																		شرط<code class="custom-inline-code"> if</code>
+																		برقرار نباشد، مفسر به سراغ دستور بعدی می‌رود که
+																		دستور&nbsp;<code
+																			class="custom-inline-code">elif</code> است و
+																		بدین صورت تفسیر می‌شود که اگر شرط <code
+																			class="custom-inline-code">if</code> برقرار
+																		نبود، شرط مربوط به دستور <code
+																			class="custom-inline-code">elif</code> چک
+																		می‌شود و در صورت برقرار بودن این شرط، دستورات
+																		بدنۀ آن اجرا می‌شود.</p>
+																	<p>بنابراین همچون دستور <code
+																			class="custom-inline-code">if</code> اگر
+																		عبارت جلوی دستور <code
+																			class="custom-inline-code">elif</code> برابر
+																		با مقدار <code
+																			class="custom-inline-code">True</code>
+																		ارزیابی شود، بدنۀ آن اجرا می‌شود که در مثال فوق
+																		اگر کاربر کلمۀ «cheese» را وارد کند، استرینگ
+																		«.It costs <span
+																			style="font-family: IRANSans;">5000</span>
+																		Tomans» در خروجی چاپ می‌شود و در غیر این صورت
+																		نیز مفسر باز هم به سراغ دستورات بعدی می‌رود که
+																		در این برنامه دستور بعد نیز <code
+																			class="custom-inline-code">elif</code> است و
+																		شرط آن بررسی می‌شود تا در صورت برقرار بودن شرط
+																		مذکور، دستورات مربوطه اجرا شود و در غیر این صورت
+																		مفسر به سراغ دستور بعد می‌رود که در این مثال
+																		دستور <code
+																			class="custom-inline-code">else</code> است.
+																	</p>
+																	<p>توجه داشته باشیم که دستور <code
+																			class="custom-inline-code">else</code> زمانی
+																		اجرا می‌شود که هیچ یک از شروط قبلی برقرار نبوده
+																		و مقدار بولین مربوط به آن‌ها برابر <code
+																			class="custom-inline-code">True</code> نگردد
+																		و این در حالی است که اگر یکی از شروط مذکور
+																		برقرار باشد، مفسر وارد بدنۀ آن شده و دستورات
+																		مربوطه را اجرا می‌کند و با پایان یافتن اجرا نیز
+																		از دستورات مرکب خارج شده و سایر دستورات برنامه
+																		را اجرا می‌کند. اسکریپت برنامۀ فوق را در فایلی
+																		به نام <code
+																			class="custom-inline-code">foodstuff.py</code>
+																		ذخیره کرده و آن را اجرا می‌کنیم که به عنوان
+																		مثال، دو نمونه از اجرای این کد را در ادامه
+																		آورده‌ایم:</p>
+																	<p></p>
+																	<pre class="language-bash nazm"><code class="hljs">============ RESTART: D:/ SokanAcademy/Python/ifElse.py ============
+Please enter your choice(rice,cheese,egg)--&gt;egg
+It costs 500 Tomans.
+
+============ RESTART: D:/ SokanAcademy/Python/ifElse.py ============
+Please enter your choice(rice,cheese,egg)--&gt;meat
+I don<span class="hljs-string">'t have in stock!
+</span></code></pre>
+																	<p>همان‌طور که مشاهده می‌کنید، در اجرای اول استرینگ
+																		«egg» را به عنوان ورودی به برنامه داده‌ایم که
+																		منجر به اجرای دستور قرار گرفته در <code
+																			class="custom-inline-code">elif</code> دوم
+																		شده و استرینگ «.It costs <span
+																			style="font-family: IRANSans;">500</span>
+																		Tomans» در خروجی چاپ می‌شود اما در اجرای دوم
+																		استرینگ «meat» را به عنوان ورودی داده‌ایم که این
+																		مقدار برای برنامه تعریف‌ نشده است به طوری که هیچ
+																		یک از شروط <code
+																			class="custom-inline-code">if</code> و <code
+																			class="custom-inline-code">elif</code>
+																		برقرار نشده و از همین روی مفسر به سراغ دستور
+																		<code class="custom-inline-code">else</code>
+																		رفته و دستورات داخل آن را اجرا می‌کند که در
+																		نهایت منجر به چاپ استرینگ «!I don't have in
+																		stock» در خروجی می‌شود.</p>
+																</article>
+																<!---->
+															</div>
+														</div>
+														<!---->
+													</div>
+													<!---->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!---->
+								<!---->
+								<!---->
+							</div>
+						</div>
+					</div>
+
+				</DIv>
+				<!----------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+				<div class="row work-pagination animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0">
+						<div class="col-md-4 col-sm-4 col-xs-4 text-center">
+							<a style="font-family:'b nazanin' ;" href="var.html#"><span>مطلب بعدی</span> <i class="icon-long-arrow-right"></i></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- jQuery -->
+	<script src="./content_files/jquery.min.js.download"></script>
+	<!-- jQuery Easing -->
+	<script src="./content_files/jquery.easing.1.3.js.download"></script>
+	<!-- Bootstrap -->
+	<script src="./content_files/bootstrap.min.js.download"></script>
+	<!-- Carousel -->
+	<script src="./content_files/owl.carousel.min.js.download"></script>
+	<!-- Stellar -->
+	<script src="./content_files/jquery.stellar.min.js.download"></script>
+	<!-- Waypoints -->
+	<script src="./content_files/jquery.waypoints.min.js.download"></script>
+	<!-- Counters -->
+	<script src="./content_files/jquery.countTo.js.download"></script>
+
+
+	<!-- MAIN JS -->
+	<script src="./content_files/main.js.download"></script>
+
+
+
+
+</body>
+
+</html>

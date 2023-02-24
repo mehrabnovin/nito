@@ -1,0 +1,1674 @@
+
+<!-- Complate -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Variable</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords"
+		content="free htm
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:url" content="">
+	<meta name="twitter:card" content="">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="./content_files/css" rel="stylesheet" type="text/css">
+	<link href="./content_files/css(1)" rel="stylesheet" type="text/css">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="./content_files/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="./content_files/icomoon.css">
+	<!--   -->
+	<link rel="stylesheet" href="./content_files/bootstrap.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="./content_files/owl.carousel.min.css">
+	<link rel="stylesheet" href="./content_files/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="./content_files/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="./content_files/modernizr-2.6.2.min.js.download"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	<style>
+		.nazm {
+			direction: ltr;
+		}
+
+		h1,
+		h2,
+		h3 {
+			font-family: 'b titr';
+		}
+
+		img {
+			direction: ltr;
+		}
+	</style>
+
+
+</head>
+
+<body dir="rtl">
+	<DIv class="ali">
+		<div class="col-md-12 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+			<figure class="text-center">
+				<center>
+					<img src="./images/unnamed.png" class="img-responsive" width="25%"
+						style="
+						margin-top: 5%;
+						border-radius: 20%;">
+				</center>
+			</figure>
+		</div>
+		<main id="main" style="width: 80%; margin-right: 2%;">
+			<section id="content-container">
+				<section id="breadcrumb-container"></section>
+				<div class="wrapper">
+					<h1 class="article-title" style="font-family: b titr;">آموزش متغیرها در سی شارپ</h1>
+					<font face="b nazanin" <p class="article-excerpt">در این بخش از مقالات آموزش سی شارپ به آموزش
+						متغیرها در زبان برنامه نویسی #C می
+						پردازیم.</p>
+						<div class="line">
+							<div class="cell-lg-9 cell-md-9 cell-sm-12">
+								<div class="article-page-content">
+									<div style="direction:rtl">
+										<p><strong>متغیرها (Variables) </strong>مکانی برای ذخیره سازی داده ها می باشند.
+											شما می
+											توانید داده های خود را درون متغیرها قرار دهید و پس از آن بارها و بارها از آن
+											ها در طول
+											برنامه استفاده کنید. <strong>زبان #C</strong> یک زبان “Strongly Typed” می
+											باشد، به این
+											معنا که تمام عملیات ها روی متغیرها فقط و فقط با درنظر گرفتن نوع متغیرها
+											انجام می شوند.
+											همچنین قوانین به خصوصی وجود دارد که مشخص می کنند چه عملیات هایی روی داده های
+											اختصاص داده
+											شده به متغیرها قابل انجام است.</p>
+										<p>نوع متغیر به طور کلی 3 ویژگی را مشخص می کند :</p>
+										<ol>
+											<li>گنجایش یا ظرفیت متغیر: مثلا نوع داده int چهار بایت است و 4 بایت از حافظه
+												RAM را
+												اشغال می کند.</li>
+											<li>نوع اطلاعاتی که درون متغیر می توان ذخیره کرد: مثلا درون متغیری از نوع
+												int فقط می
+												توان اعداد صحیح و بدون اعشار را ذخیره کرد.</li>
+											<li>چه عملیاتی را می توان بر روی آن انجام داد: مثلا روی انواع عددی می توان
+												عملیات ریاضی
+												را انجام داد.</li>
+										</ol>
+										<h2>انواع داده ها در سی شارپ</h2>
+										<p>&nbsp;در <strong>زبان سی شارپ</strong>، نوع های داده مختلفی وجود دارند که با
+											کلمه های
+											کلیدی مشخصی تعریف می شوند، برای مثال:</p>
+										<ul>
+											<li><strong>Int</strong> – این نوع داده، اعداد صحیح را ذخیره می کند مانند
+												123 یا 123-
+											</li>
+											<li><strong>Double</strong> <span>–این نوع داده، اعداد اعشاری را ذخیره می
+													کند، مانند
+													19.99 یا 19.99-</span></li>
+											<li><strong>Char</strong> – این نوع داده، کاراکترهای تکی را ذخیره می کند
+												مانند ‘a’ یا
+												‘B’. دقت داشته باشید که مقادیر کاراکتر درون تک کوتیشن ها (‘ ‘) قرار می
+												گیرند.</li>
+											<li><strong>String</strong> – این نوع داده برای ذخیره رشته های متنی به کار
+												می رود. رشته
+												ها می توانند ترکیبی از حروف الفبا، اعداد و پارامترهای خاص باشند. مانند
+												"Hello
+												World". مقادیر رشته ای درون جفت کوتیشن ها (“ ”) قرار می گیرند.</li>
+											<li><strong>Bool</strong> – این نوع داده مقدار های true و false را می پذیرد
+												که true به
+												معنی درست و false به معنی نادرست می باشد.</li>
+										</ul>
+										<h2>تعریف متغیرها</h2>
+										<p>برای تعریف یک متغیر، باید ابتدا نوع آن را مشخص کرده و سپس به آن یک مقدار
+											اختصاص دهید. شکل
+											زیر نحوه انجام این کار را نشان می دهد:</p>
+										<p style="text-align:left;"><img src="images/01-CSharp Variables.PNG"
+												width="470" height="50" alt="آموزش سی شارپ" title="آموزش سی شارپ"></p>
+										<p>در دستور بالا type نوع داده را مشخص می کند که می تواند یکی از انواع داده ها
+											در <strong>سی
+												شارپ</strong> باشد مثل int یا string.</p>
+										<p>VariableName نام متغیری می باشد که قرار است مقداری را در خود ذخیره نماید و
+											value در حقیقت
+											مقداری است که می خواهیم درون متغیر ذخیره کنیم.</p>
+										<p>مثال زیر نحوه تعریف یک <strong>متغیر</strong> از نوع رشته ای (string) را نشان
+											می دهد:</p>
+										<p style="text-align:left;"><img src="images/02-CSharp Variables.PNG"
+												width="477" height="296" alt="آموزش متغیرها در سی شارپ"
+												title="آموزش متغیرها در سی شارپ"></p>
+										<p style="text-align:left;">&nbsp;<img src="images/03-CSharp Variables.PNG"
+												width="480" height="73" alt="آموزش سی شارپ" title="آموزش سی شارپ"></p>
+										<br>
+										<h2>تعریف یک متغیر از نوع عددی (int):</h2>
+										<p style="text-align:left;"><img src="images/04-CSharp Variables.PNG"
+												width="478" height="301" alt="آموزش Variables در سی شارپ"
+												title="آموزش Variables در سی شارپ">
+										</p>
+										<p style="text-align:left;">&nbsp;<img src="images/05-CSharp Variables.PNG"
+												width="480" height="68" alt="دوره آموزش سی شارپ"
+												title="دوره آموزش سی شارپ"></p>
+										<p>شما همچین می توانید یک <strong>متغیر </strong>را بدون اختصاص مقداری به آن
+											تعریف کنید و
+											بعدا در زمانی مشخص آن را مقداردهی کنید.</p>
+										<p style="text-align:left;"><img src="images/06-CSharp Variables.PNG"
+												width="477" height="315" alt="آموزش C#" title="آموزش C#"></p>
+										<p style="text-align:left;">&nbsp;<strong><img
+													src="images/07-CSharp Variables.PNG" width="480" height="67"
+													alt="آموزش C#" title="آموزش C#"></strong></p>
+										<p>به خاطر داشته باشید که اگر یک مقدار جدید را به یک متغیر موجود اختصاص دهید،
+											مقدار جدید
+											جایگزین مقدار قبلی می شود. خروجی مثال زیر در نهایت عدد 20 است:</p>
+										<p style="text-align:left;"><img src="images/08-CSharp Variables.PNG"
+												width="478" height="320" alt="آموزش سی شارپ" title="آموزش سی شارپ"></p>
+										<p style="text-align:left;">&nbsp;<img src="images/09-CSharp Variables.PNG"
+												width="481" height="76" alt="آموزش Variables در سی شارپ"
+												title="آموزش Variables در سی شارپ"></p>
+										<h2>مقادیر ثابت</h2>
+										<p>گاهی اوقات قصد تعریف متغییری را دارید که نمی خواهید مقدار آن در طول اجرای
+											برنامه تغییر
+											کند و می خواهید مقداری را به صورت ثابت در آن ذخیره کنید. برای این منظور می
+											توانید از
+											کلمه کلیدی const استفاده نمایید.<br>مثال:</p>
+										<p style="text-align:left;"><img src="images/10-CSharp Variables.PNG"
+												width="492" height="73" alt="آموزش C#" title="آموزش C#"></p>
+										<p>نکته: کلمه کلیدی const زمانی بسیار کاربردی خواهد بود که شما می خواهید یک
+											متغیر همیشه
+											مقداری ثابت را ذخیره کند (مانند عدد PI=3.14).</p>
+										<p>نکته: شما نمی توانید یک <strong>متغیر</strong> ثابت را بدون اختصاص دادن
+											مقداری به آن
+											ایجاد کنید. در صورت انجام این کار، این خطا را دریافت می کنید: A const field
+											requires a
+											value to be provided.</p>
+										<h2>تعریف انواع داده ای دیگر در سی شارپ</h2>
+										<p>مثال زیر نشان می دهد که چگونه برای انواع داده ها <strong>متغیر</strong> تعریف
+											کنیم:</p>
+										<p style="text-align:left;"><img src="images/11-CSharp Variables.PNG"
+												width="502" height="135" alt="آموزش متغیرها در سی شارپ"
+												title="آموزش متغیرها در سی شارپ"></p>
+										<h2>نمایش داده متغیرها</h2>
+										<p>متد ()WriteLine اغلب برای نمایش دادن مقادیر <strong>متغیرها</strong> در پنجره
+											کنسول به
+											کار می رود. شما می توانید برای ترکیب کردن یک مقدار دیگر با یک متغیر از نوع
+											رشته ای
+											(string) از عملگر + استفاده کنید.</p>
+										<p>مثال:</p>
+										<p style="text-align: left;">&nbsp;<img src="images/12-CSharp Variables.PNG"
+												width="480" height="294" alt="آموزش سی شارپ" title="آموزش سی شارپ"></p>
+										<p style="text-align:left;"><img src="images/13-CSharp Variables.PNG"
+												width="481" height="72" alt="آموزش C#" title="آموزش C#"></p>
+										<p>شما همچنین می توانید از عملگر + برای اضافه کردن یک متغیر به یک متغیر دیگر
+											استفاده کنید.
+											مثال زیر نحوه انجام این کار را نشان می دهد.</p>
+										<p style="text-align:left;"><img src="images/14-CSharp Variables.PNG"
+												width="478" height="345" alt="آموزش Variables در سی شارپ"
+												title="آموزش Variables در سی شارپ">
+										</p>
+										<p style="text-align:left;"><img src="images/15-CSharp Variables.PNG"
+												width="480" height="74" alt="دوره آموزش سی شارپ"
+												title="دوره آموزش سی شارپ"></p>
+										<p>نکته: برای مقادیر عددی، عملگر + به عنوان یک عملگر محساباتی عمل می کند و هر دو
+											عدد یا
+											<strong>متغیر</strong> را با یکدیگر جمع می کند. اما زمانی که یک طرف عملگر +
+											رشته باشد،
+											درحقیقت عمل الحاق صورت می گیرد، چرا که نمی توان یک رشته را با یک مقدار عددی
+											جمع نمود.
+										</p>
+										<p style="text-align:left;"><img src="images/16-CSharp Variables.PNG"
+												width="483" height="320" alt="آموزش Variables در سی شارپ"
+												title="آموزش Variables در سی شارپ">
+										</p>
+										<p style="text-align:left;"><img src="images/17-CSharp Variables.PNG"
+												width="483" height="71" alt="آموزش C#" title="آموزش C#"></p>
+										<p>در مثال بالا:</p>
+										<ul>
+											<li>x مقدار 5 را ذخیره می کند</li>
+											<li>Y مقدار 6 را ذخیره می کند</li>
+											<li>سپس ما از متد ()WriteLine استفاده می کنیم تا مقدار x + y که برابر با 11
+												می شود را
+												نمایش دهد</li>
+										</ul>
+										<h2>تعریف چندین متغیر</h2>
+										<p>برای تعریف بیش از یک <strong>متغیر</strong> از یک نوع، می توانید آن ها را در
+											یک دستور
+											تعریف کرده و با کاما از یکدیگر جدا نمایید.</p>
+										<p>در مثال زیر 3 متغیر x ،y و z در یک دستور تعریف شده اند:</p>
+										<p style="text-align:left;"><img src="images/18-CSharp Variables.PNG"
+												width="481" height="296" alt="آموزش سی شارپ" title="آموزش سی شارپ"></p>
+										<p style="text-align:left;"><img src="images/19-CSharp Variables.PNG"
+												width="484" height="71" alt="آموزش متغیرها در سی شارپ"
+												title="آموزش متغیرها در سی شارپ"></p><br>
+										<h2>شناسه ها در سی شارپ</h2>
+										<p>تمام <strong>متغیرهای #C</strong>&nbsp;باید با یکسری از اسامی منحصر به فرد
+											شناسایی شوند.
+											این اسامی خاص شناسه نامیده می شوند.</p>
+										<p>شناسه ها می توانند اسامی کوتاه مانند X و Y بوده و یا اسامی تشریح کننده مانند
+											(age،sum و
+											...) باشند.</p>
+										<p>نکته: پیشنهاد می شود که از اسامی تشریحی و با معنی استفاده کنید تا روند کد
+											نویسی قابل درک
+											تر و آسان تر پیش برود.</p>
+										<p style="text-align:left;"><img src="images/20-CSharp Variables.PNG"
+												width="521" height="434" alt="آموزش متغیرها" title="آموزش متغیرها "></p>
+										<h2 style="text-align: left;"><img src="images/21-CSharp Variables.PNG"
+												width="523" height="92" alt="آموزش C#" title="آموزش C#"></h2><br>
+										<h2>مواردی که در انتخاب اسامی متغیرها (شناسه ها) باید رعایت کنیم:</h2>
+										<ul>
+											<li>اسامی متغیرها می تواند شامل حروف، ارقام و کاراکتر ( _ ) باشد.</li>
+											<li>اسامی متغیرها باید با یک حرف شروع شود و نمی توانند با عدد شروع شوند.
+											</li>
+											<li>اسامی متغیرها نباید دارای فاصله باشد.</li>
+											<li>اسامی حساس به حروف کوچک و بزرگ می باشند. بنابراین متغیر name با متغیر
+												Name متفاوت
+												خواهد بود.</li>
+											<li>اسامی رزرو شده (کلمه های کلیدی <strong>زبان سی شارپ</strong> مانند int و
+												یا double )
+												نمی توانند به عنوان اسم استفاده شوند.</li>
+										</ul>
+										<h2>در انتخاب نام متغیرها، بهتر است نکات زیر رعایت شود:</h2>
+										<ul>
+											<li>نام با معنی و با توجه به کاربرد متغیر در برنامه انتخاب شود. مانند
+												woodLength</li>
+											<li>از نام های مخفف استفاده نکنید چون خواندن آنها مشکل است.مانند
+												crntStdnt&nbsp;</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+			</section>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<section>
+
+				<h1 style="text-align: center;font-family:'b titr';font-weight:400;font-style:normal"
+												class="vc_custom_heading us_custom_907ca5ec"><span
+													id="mtghyr_ha_dr_paytwn">متغیر ها
+													در پایتون</span></h1>
+											</div>
+											<img src="images/download.png" style="margin-right:33% ;border-radius: 30px;" alt="">
+											<p>&nbsp;</p>
+											<p>&nbsp;</p>
+
+										</div>
+
+										<h2 style="text-align: right;font-family:'b titr';font-weight:400;font-style:normal"
+											class="vc_custom_heading us_custom_907ca5ec"><span
+												id="mtghyr_ya_variable_chyst">متغیر یا variable چیست؟</span></h2>
+										<div class="wpb_text_column us_custom_35e520c0">
+											<div  class="wpb_wrapper">
+												<p style="width: 84%;"   >متغیرها (Variables) فضاهایی از حافظه هستند که می توان مقداری را به
+													آنها
+													اختصاص داد. برای اینکه بهتر بتوانید متغیر ها را درک کنید، متغیر ها
+													را مانند
+													یک ظرف یا یک لیوان را در نظر بگیرید که میتوان موادی را در آن ریخت.
+													این مواد
+													همان داده های ما هستند. در پایتون انواع مختلفی از داده ها وجود دارد
+													که با
+													آنها آشنا خواهید شد.</p>
+											</div>
+										</div>
+										<h2 style="text-align: right;font-family:'b titr';font-weight:400;font-style:normal"
+											class="vc_custom_heading us_custom_907ca5ec"><span
+												id="nhwh_sakht_mtghyrha">نحوه
+												ساخت متغیرها</span></h2>
+										<div  class="wpb_text_column us_custom_ee8e8ef1">
+											<div  class="wpb_wrapper">
+												<p    style="width: 84%;"  "><img decoding="async" alt="ساخت متغیر"
+														width="768" height="344" src="./images/متغیر-ها-768x344.jpg"></noscript>همانطور
+													که در
+													تصویر بالا مشاهده می کنید، number نام <strong>متغیر</strong> ما است
+													و یا نام
+													<strong>ظرف</strong> ما است که قرار است موادی درون ریخته یا گذاشته
+													شود
+													(مانند یک لیوان یا کیف) . در سمت راست هم <strong>مواد</strong> یا
+													<strong>داده</strong> های ما قرار دارند. در این عکس داده های ما از
+													نوع اعداد
+													صحیح یا integer هستند. حالا میرسیم به علامت مساوی که در پایتون
+													<strong>عملگر</strong> <strong>تخصیص</strong> نام دارد. داده ها یا
+													مواد ما
+													با استفاده از عملگر تخصیص درون ظرف یا متغیر ریخته می شود و یا به
+													اصطلاح این
+													داده به این متغیر، اختصاص میابد. عملگر های تخصیص دیگری هم در پایتون
+													هستند که
+													در درس های آینده با انها آشنا خواهید شد.
+												</p>
+												<h3 style="text-align: justify;"><span
+														id="sakht_mtghyr_variable"><strong>ساخت
+															متغیر (variable)</strong></span></h3>
+												<p style="width: 84%;"  >در قسمت بالا متوجه شدید که قالب یک متغیر
+													در
+													پایتون به چه شکل است و از چه اجزایی تشکیل شده است. جالا میخواهیم در
+													محیط
+													idel پایتون یا هر محیط دلخواه دیگری به صورت عملی یک متغیر بسازیم.
+													شما هم گام
+													به گام با ما جلو بروید. idel پایتون را باز کرده و کد های زیر را تایپ
+													کنید:
+												</p>
+												<div class="wp-block-codemirror-blocks code-block"
+													style="text-align: justify;" id="0">
+													<pre style="width: 84%;"   class="CodeMirror"
+														data-setting="{&quot;mode&quot;:&quot;python&quot;,&quot;mime&quot;:&quot;text/x-python&quot;,&quot;theme&quot;:&quot;dracula&quot;,&quot;lineNumbers&quot;:false,&quot;lineWrapping&quot;:false,&quot;styleActiveLine&quot;:false,&quot;readOnly&quot;:false,&quot;align&quot;:&quot;&quot;}"
+														id="code-block-0" style="display: none;">age = 22</pre>
+													<div style="width: 84%;"   class="CodeMirror CodeMirror-simplescroll cm-s-dracula">
+														<div
+															style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;">
+															
+														</div>
+														<div class="CodeMirror-simplescroll-horizontal"
+															cm-not-content="true" style="display: none;">
+															<div></div>
+														</div>
+														<div class="CodeMirror-simplescroll-vertical"
+															cm-not-content="true" style="display: none;">
+															<div></div>
+														</div>
+														<div class="CodeMirror-scrollbar-filler" cm-not-content="true">
+														</div>
+														<div class="CodeMirror-gutter-filler" cm-not-content="true">
+														</div>
+														<div class="CodeMirror-scroll" tabindex="-1">
+															<div class="CodeMirror-sizer"
+																style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; min-height: 40px; min-width: 83.8438px; padding-right: 0px; padding-bottom: 0px;">
+																<div style="position: relative; top: 0px;">
+																	<div class="CodeMirror-lines" role="presentation">
+																		<div role="presentation"
+																			style="position: relative; outline: none;">
+																			<div class="CodeMirror-measure"></div>
+																			<div class="CodeMirror-measure"></div>
+																			<div
+																				style="position: relative; z-index: 1;">
+																			</div>
+																			<div class="CodeMirror-cursors">
+																				<div class="CodeMirror-cursor"
+																					style="left: 4px; top: 0px; height: 32px;">
+																					&nbsp;</div>
+																			</div>
+																			<div class="CodeMirror-code"
+																				role="presentation">
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">age</span> <span class="cm-operator">=</span> <span class="cm-number">22</span></span></pre>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div
+																style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 40px;">
+															</div>
+															<div class="CodeMirror-gutters"
+																style="display: none; height: 70px;"></div>
+														</div>
+													</div>
+												</div>
+												<p style="width: 84%;"   >حالا ما یک متغیر داریم که نام آن age است
+													و مقدار
+													آن 22 و با عملگر تخصیص = مقدار 22 را در این متغبر ریختیم یا به آن
+													اختصاص
+													دادیم. سعی کنید در نام گذاری هر چیزی در برنامه نویسی یک نام مرتبط و
+													با مسما
+													باشد. البته نام گذاری متغیر ها در پایتون قوانینی دارد که خواهیم گفت
+													اما به
+													صورت کلی سعی کنید نام با مسمایی انتخاب کنید. به عنوان مثال ما در
+													اینجا قصد
+													داشتیم سن یک فرد را در متغیر ذخیره کنیم، پس یک متغیر با نام age که
+													به معنای
+													سن هست انتخاب کردیم. اگر معادل انگلیسی کلمه ای را نمی دانید، می
+													توانید نام
+													متغیر ها را به صورت فینگلیش بنویسید.</p>
+												<p style="width: 84%;"  >نکته ی مهمی که این قسمت دارد این است که باید نام متغیر یا چیز های
+													دیگر طوری
+													انتخاب شوند که اگر مدتی به برنامه ای که نوشتید سر نزدید بتوانید
+													بفهمید فلان
+													متغیر به چه دلیل تعریف شده و چه عملکردی دارد و یا اینکه اگر فرد
+													دیگری مثل
+													همکارتان بخواهد برنامه یا کد های شما را بخواند، براحتی بتواند آن را
+													درک کرده
+													و بفهمد. در واقع این شیوه برنامه نویسان حرفه ای است. شما سعی کنید از
+													همین
+													حالا به این صورت عمل کنید.</p>
+											</div>
+										</div>
+										<h2 class="vc_custom_heading us_custom_907ca5ec"><span id="anwa_mtghyr">انواع
+												متغیر</span></h2>
+										<div  style="padding-right: 2%;" class="wpb_text_column us_custom_35e520c0">
+											<div class="wpb_wrapper">
+												<ul>
+													<li>متغیر های عددی : integer ، float ، complex</li>
+													<li>رشته&nbsp; (string)</li>
+													<li>تاپل (tuple)</li>
+													<li>لیست (مجموعه)</li>
+													<li>مجموعه (set)</li>
+													<li>دیکشنری (dictionary)</li>
+													<li>بولین (boolean)</li>
+													<li>ویژه (none)</li>
+												</ul>
+												<p>در این درس فقط دو مورد اول توضبح داده خواهد شد. در درس های بعدی هر
+													کدام از
+													این متغیرها را به طور مفصل به آن خواهیم پرداخت.</p>
+												<h3><span id="Integer"><strong>Integer</strong></span></h3>
+												<p>متغیر های integer یا int متغیرهایی هستند که شامل اعداد صحیح می شوند.
+													این
+													اعداد شامل اعداد مثبت و منفی، بدون اعشار و با&nbsp; طول نا محدود
+													هستند.</p>
+												<div  style="padding-right: 2%;" class="wp-block-codemirror-blocks code-block" id="1">
+													<pre class="CodeMirror"
+														data-setting="{&quot;mode&quot;:&quot;python&quot;,&quot;mime&quot;:&quot;text/x-python&quot;,&quot;theme&quot;:&quot;dracula&quot;,&quot;lineNumbers&quot;:false,&quot;lineWrapping&quot;:true,&quot;styleActiveLine&quot;:true,&quot;readOnly&quot;:false,&quot;align&quot;:&quot;&quot;}"
+														id="code-block-1" style="display: none;">number1 = 123
+number2 = -123
+number3 = 1234436373698</pre>
+													<div  style="width: 84%;padding-right: 2%;"
+														class="CodeMirror CodeMirror-wrap CodeMirror-simplescroll cm-s-dracula">
+														<div
+															style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;">
+															
+														</div>
+														<div  style="width: 84%;padding-right: 2%;" class="CodeMirror-simplescroll-horizontal"
+															cm-not-content="true" style="display: none;">
+															<div></div>
+														</div>
+														<div style="width: 84%;" class="CodeMirror-simplescroll-vertical"
+															cm-not-content="true" style="display: none;">
+															<div></div>
+														</div>
+														<div style="width: 84%;" class="CodeMirror-scrollbar-filler" cm-not-content="true">
+														</div>
+														<div class="CodeMirror-gutter-filler" cm-not-content="true">
+														</div>
+														<div style="width: 84%;" class="CodeMirror-scroll" tabindex="-1">
+															<div class="CodeMirror-sizer"
+																style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; min-height: 104px; padding-right: 0px; padding-bottom: 0px;">
+																<div style="position: relative; top: 0px;">
+																	<div class="CodeMirror-lines" role="presentation">
+																		<div role="presentation"
+																			style="position: relative; outline: none;">
+																			<div class="CodeMirror-measure">
+																				<pre><span>xxxxxxxxxx</span></pre>
+																			</div>
+																			<div class="CodeMirror-measure"></div>
+																			<div
+																				style="position: relative; z-index: 1;">
+																			</div>
+																			<div class="CodeMirror-cursors">
+																				<div class="CodeMirror-cursor"
+																					style="left: 4px; top: 0px; height: 32px;">
+																					&nbsp;</div>
+																			</div>
+																			<div class="CodeMirror-code"
+																				role="presentation">
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">number1</span> <span class="cm-operator">=</span> <span class="cm-number">123</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">number2</span> <span class="cm-operator">=</span> <span class="cm-operator">-</span><span class="cm-number">123</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">number3</span> <span class="cm-operator">=</span> <span class="cm-number">1234436373698</span></span></pre>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div
+																style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 104px;">
+															</div>
+															<div class="CodeMirror-gutters"
+																style="display: none; height: 134px;"></div>
+														</div>
+													</div>
+												</div>
+												<h3><span id="Float"><strong>Float</strong></span></h3>
+												<p>float ها به متغیرهایی گفته می شود که اعداد اعشاری را در خود نگه داری
+													می
+													کنند.&nbsp; این اعدا می توانند مثبت یا منفی باشند.</p>
+												<div class="wp-block-codemirror-blocks code-block" id="2">
+													<pre class="CodeMirror"
+														data-setting="{&quot;mode&quot;:&quot;python&quot;,&quot;mime&quot;:&quot;text/x-python&quot;,&quot;theme&quot;:&quot;dracula&quot;,&quot;lineNumbers&quot;:false,&quot;lineWrapping&quot;:true,&quot;styleActiveLine&quot;:true,&quot;readOnly&quot;:false,&quot;align&quot;:&quot;&quot;}"
+														id="code-block-2" style="display: none;">float = 1.5
+faat2 = -1.5
+foat3 = 2.5555555555</pre>
+													<div
+														class="CodeMirror CodeMirror-wrap CodeMirror-simplescroll cm-s-dracula">
+														<div style="width: 84%;"
+															style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;">
+															
+														</div>
+														<div style="width: 84%;" class="CodeMirror-simplescroll-horizontal"
+															cm-not-content="true" style="display: none;">
+															<div></div>
+														</div>
+														<div style="width: 84%;" class="CodeMirror-simplescroll-vertical"
+															cm-not-content="true" style="display: none;">
+															<div></div>
+														</div>
+														<div style="width: 84%;" class="CodeMirror-scrollbar-filler" cm-not-content="true">
+														</div>
+														<div style="width: 84%;" class="CodeMirror-gutter-filler" cm-not-content="true">
+														</div>
+														<div style="width: 84%;" class="CodeMirror-scroll" tabindex="-1">
+															<div style="width: 84%;" class="CodeMirror-sizer"
+																style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; min-height: 104px; padding-right: 0px; padding-bottom: 0px;">
+																<div style="position: relative; top: 0px;">
+																	<div class="CodeMirror-lines" role="presentation">
+																		<div role="presentation"
+																			style="position: relative; outline: none;">
+																			<div class="CodeMirror-measure">
+																				<pre><span>xxxxxxxxxx</span></pre>
+																			</div>
+																			<div class="CodeMirror-measure"></div>
+																			<div
+																				style="position: relative; z-index: 1;">
+																			</div>
+																			<div class="CodeMirror-cursors">
+																				<div class="CodeMirror-cursor"
+																					style="left: 4px; top: 0px; height: 32px;">
+																					&nbsp;</div>
+																			</div>
+																			<div class="CodeMirror-code"
+																				role="presentation">
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">float</span> <span class="cm-operator">=</span> <span class="cm-number">1.5</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">faat2</span> <span class="cm-operator">=</span> <span class="cm-operator">-</span><span class="cm-number">1.5</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">foat3</span> <span class="cm-operator">=</span> <span class="cm-number">2.5555555555</span></span></pre>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div
+																style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 104px;">
+															</div>
+															<div style="width: 84%;" class="CodeMirror-gutters"
+																style="display: none; height: 134px;"></div>
+														</div>
+													</div>
+												</div>
+												<h3><span id="Complex">&nbsp; <strong>Complex</strong></span></h3>
+												<p>متغیرهای complex همیشه با حرف j همراه هستند. یعنی داده ای complex می
+													باشد که
+													شامل حرف j باشد. این حرف عضو ثابت متغیرهای complex است.</p>
+												<div style="width: 84%;" class="wp-block-codemirror-blocks code-block" id="3">
+													<pre class="CodeMirror"
+														data-setting="{&quot;mode&quot;:&quot;python&quot;,&quot;mime&quot;:&quot;text/x-python&quot;,&quot;theme&quot;:&quot;dracula&quot;,&quot;lineNumbers&quot;:false,&quot;lineWrapping&quot;:true,&quot;styleActiveLine&quot;:true,&quot;readOnly&quot;:false,&quot;align&quot;:&quot;&quot;}"
+														id="code-block-3" style="display: none;">num1 = 12j
+num2 = 12345j
+num3 = -2j
+num4 = 2+5j
+</pre>
+													<div style="width: 84%;"
+														class="CodeMirror CodeMirror-wrap CodeMirror-simplescroll cm-s-dracula">
+														<div 
+															style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;">
+															
+														</div>
+														<div class="CodeMirror-simplescroll-horizontal"
+															cm-not-content="true" style="display: none;">
+															<div></div>
+														</div>
+														<div class="CodeMirror-simplescroll-vertical"
+															cm-not-content="true" style="display: none;">
+															<div></div>
+														</div>
+														<div class="CodeMirror-scrollbar-filler" cm-not-content="true">
+														</div>
+														<div class="CodeMirror-gutter-filler" cm-not-content="true">
+														</div>
+														<div class="CodeMirror-scroll" tabindex="-1">
+															<div class="CodeMirror-sizer"
+																style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; min-height: 168px; padding-right: 0px; padding-bottom: 0px;">
+																<div style="position: relative; top: 0px;">
+																	<div class="CodeMirror-lines" role="presentation">
+																		<div role="presentation"
+																			style="position: relative; outline: none;">
+																			<div class="CodeMirror-measure">
+																				<pre><span>xxxxxxxxxx</span></pre>
+																			</div>
+																			<div class="CodeMirror-measure"></div>
+																			<div
+																				style="position: relative; z-index: 1;">
+																			</div>
+																			<div class="CodeMirror-cursors">
+																				<div class="CodeMirror-cursor"
+																					style="left: 4px; top: 0px; height: 32px;">
+																					&nbsp;</div>
+																			</div>
+																			<div class="CodeMirror-code"
+																				role="presentation">
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">num1</span> <span class="cm-operator">=</span> <span class="cm-number">12j</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">num2</span> <span class="cm-operator">=</span> <span class="cm-number">12345j</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">num3</span> <span class="cm-operator">=</span> <span class="cm-operator">-</span><span class="cm-number">2j</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">num4</span> <span class="cm-operator">=</span> <span class="cm-number">2</span><span class="cm-operator">+</span><span class="cm-number">5j</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div
+																style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 168px;">
+															</div>
+															<div class="CodeMirror-gutters"
+																style="display: none; height: 198px;"></div>
+														</div>
+													</div>
+												</div>
+												<h3><span id="rshth_ya_String"><strong>رشته یا String</strong></span>
+												</h3>
+												<p style="width:84% ;">رشته های دنباله ای از کاراکتر های هستند که داخل&nbsp; ” ” یا&nbsp; ‘
+													‘ قرار
+													دارند. به این دو غلامت جفت کوتیشن و کوتیشن می گویند. در بعضی از زبان
+													های
+													برنامه نویسی برای تعریف یک رشته&nbsp; داده مورد نظر حتما باید داخل ”
+													” قرار
+													گیرد. اما در پایتون از ‘ ‘ هم میتوان استفاده کرد. برای تایپ این
+													کاراکتر ها
+													دکمه کناری سمت چپ Enter را فشار دهید. برای تایپ ” ” باید اول را دکمه
+													shift
+													را گرفته و هم زمان دکمه کوتیشن را فشار دهید.</p>
+												<div class="wp-block-codemirror-blocks code-block" id="4">
+													<pre style="width: 84%;" class="CodeMirror"
+														data-setting="{&quot;mode&quot;:&quot;python&quot;,&quot;mime&quot;:&quot;text/x-python&quot;,&quot;theme&quot;:&quot;dracula&quot;,&quot;lineNumbers&quot;:false,&quot;lineWrapping&quot;:true,&quot;styleActiveLine&quot;:true,&quot;readOnly&quot;:false,&quot;align&quot;:&quot;&quot;}"
+														id="code-block-4" style="display: none;">string1 = "ali"
+string2 = "mohammad"
+string3 = 'ali va mohammad'
+string4 = "123"
+string5 = '1234'
+string6 = "12ali"
+string7 = '123mohammad'</pre>
+													<div
+														class="CodeMirror CodeMirror-wrap CodeMirror-simplescroll cm-s-dracula">
+														<div
+															style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;">
+															
+														</div>
+														<div class="CodeMirror-simplescroll-horizontal"
+															cm-not-content="true" style="display: none;">
+															<div></div>
+														</div>
+														<div class="CodeMirror-simplescroll-vertical"
+															cm-not-content="true" style="display: none;">
+															<div></div>
+														</div>
+														<div class="CodeMirror-scrollbar-filler" cm-not-content="true">
+														</div>
+														<div class="CodeMirror-gutter-filler" cm-not-content="true">
+														</div>
+														<div class="CodeMirror-scroll" tabindex="-1">
+															<div class="CodeMirror-sizer"
+																style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; min-height: 232px; padding-right: 0px; padding-bottom: 0px;">
+																<div style="position: relative; top: 0px;">
+																	<div class="CodeMirror-lines" role="presentation">
+																		<div role="presentation"
+																			style="position: relative; outline: none;">
+																			<div class="CodeMirror-measure">
+
+																			</div>
+																			<div class="CodeMirror-measure"></div>
+																			<div
+																				style="position: relative; z-index: 1;">
+																			</div>
+																			<div class="CodeMirror-cursors">s
+																			</div>
+																			<div style="width:84% ;" class="CodeMirror-code"
+																				role="presentation">
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">string1</span> <span class="cm-operator">=</span> <span class="cm-string">"ali"</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">string2</span> <span class="cm-operator">=</span> <span class="cm-string">"mohammad"</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">string3</span> <span class="cm-operator">=</span> <span class="cm-string">'ali va mohammad'</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">string4</span> <span class="cm-operator">=</span> <span class="cm-string">"123"</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">string5</span> <span class="cm-operator">=</span> <span class="cm-string">'1234'</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">string6</span> <span class="cm-operator">=</span> <span class="cm-string">"12ali"</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">string7</span> <span class="cm-operator">=</span> <span class="cm-string">'123mohammad'</span></span></pre>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div
+																style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 232px;">
+															</div>
+															<div class="CodeMirror-gutters"
+																style="display: none; height: 262px;"></div>
+														</div>
+													</div>
+												</div>
+												<p>&nbsp;</p>
+											</div>
+										</div>
+										<h2 style="text-align: right;font-family:'b titr';font-weight:400;font-style:normal"
+											class="vc_custom_heading us_custom_907ca5ec"><span
+												id="qwanyn_nam_gdhary_mtghyrha">قوانین نام گذاری متغیرها</span></h2>
+										<div  style="width: 84%;padding-right: 2%;" class="wpb_text_column us_custom_35e520c0">
+											<div style="width: 84%;" class="wpb_wrapper">
+												<p>همانطور که گفته شد نام گذاری متغیرها دارای قواعد خاصی می باشد. این
+													قواعد در
+													همه زبان های برنامه نویسی وجود دارد. 7 مورد وجود دارد که در هنگام
+													تعریف
+													متغیرها باید آنها را رعایت کنید:</p>
+												<ul>
+													<li>شامل حروف کوچک و بزرگ انگلیسی باشد. یعنی <strong>a تا z و A تا
+															Z</strong>.</li>
+													<li>شامل اعداد <strong>0</strong> تا <strong>9</strong> باشد.</li>
+													<li>شامل کاراکتر <strong>آندرلاین</strong> <strong>_</strong> باشد.
+													</li>
+													<li>از کارکترهای خاص مانند <strong>@!#$%*</strong> و… استفاده نشود.
+													</li>
+													<li>شامل <strong>کلمات کلیدی</strong> پایتون نباشد. (کلمات کلیدی
+														پایتون در
+														ادامه توضیح داده خواهد شد)</li>
+													<li>نام متغیر با <strong>عدد</strong> شروع نشود.</li>
+													<li>فاصله یا <strong>space</strong> نداشته باشد.</li>
+												</ul>
+												<p><strong>نکته:</strong> زبان برنامه نویسی پایتون به بزرگی و کوچکی حروف
+													حساس
+													است. یعنی بین متغیری با نام AMIR و متغیری با نام amir تفاوت قائل است
+													و این
+													متغیرها را یک متغیر در نظر نمی گیرد. این دو هر کدام یک متغیر مجزا
+													هستند.</p>
+												<h3><span
+														id="mthal_hayy_az_antkhab_drst_nam_mtghyr_ya_variable"><strong>مثال
+															هایی از انتخاب درست نام متغیر یا variable</strong></span>
+												</h3>
+												<div class="wp-block-codemirror-blocks code-block " id="5">
+													<pre class="CodeMirror"
+														data-setting="{&quot;mode&quot;:&quot;python&quot;,&quot;mime&quot;:&quot;text/x-python&quot;,&quot;theme&quot;:&quot;dracula&quot;,&quot;lineNumbers&quot;:false,&quot;lineWrapping&quot;:true,&quot;styleActiveLine&quot;:true,&quot;readOnly&quot;:true,&quot;align&quot;:&quot;&quot;}"
+														id="code-block-5" style="display: none;">var = 123
+VAR = 123
+V9R = 123
+var5 = 123
+var_4 = 123
+_var = 123
+va_r = 123
+V_12_R = 123
+Aa1_ = 123</pre>
+													<div style="width: 84%;"
+														class="CodeMirror CodeMirror-wrap CodeMirror-simplescroll cm-s-dracula">
+														<div style="width: 84%;" style="width: 84%;"
+															style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;">
+															
+														</div>
+														<div style="width: 84%;" class="CodeMirror-simplescroll-horizontal"
+															cm-not-content="true" style="display: none;">
+															<div style="width: 84%;"></div>
+														</div>
+														<div style="width: 84%;" class="CodeMirror-simplescroll-vertical"
+															cm-not-content="true" style="display: none;">
+															<div style="width: 84%;"></div>
+														</div>
+														<div style="width: 84%;" class="CodeMirror-scrollbar-filler" cm-not-content="true">
+														</div>
+														<div style="width: 84%;" class="CodeMirror-gutter-filler" cm-not-content="true">
+														</div>
+														<div style="width: 84%;" class="CodeMirror-scroll" tabindex="-1">
+															<div style="width: 84%;" class="CodeMirror-sizer"
+																style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; min-height: 296px; padding-right: 0px; padding-bottom: 0px;">
+																<div style="width: 84%;" style="position: relative; top: 0px;">
+																	<div style="width: 84%;" class="CodeMirror-lines" role="presentation">
+																		<div style="width: 84%;" role="presentation"
+																			style="position: relative; outline: none;">
+																			<div style="width: 84%;" class="CodeMirror-measure">
+																				<pre><span>xxxxxxxxxx</span></pre>
+																			</div>
+																			<div style="width: 84%;" class="CodeMirror-measure"></div>
+																			<div style="width: 84%;"
+																				style="position: relative; z-index: 1;">
+																			</div>
+																			<div style="width: 84%;" class="CodeMirror-cursors">
+																				<div style="width: 84%;" class="CodeMirror-cursor"
+																					style="left: 4px; top: 0px; height: 32px;">
+																					&nbsp;</div>
+																			</div>
+																			<div style="width: 84%;" class="CodeMirror-code"
+																				role="presentation">
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">var</span> <span class="cm-operator">=</span> <span class="cm-number">123</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">VAR</span> <span class="cm-operator">=</span> <span class="cm-number">123</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">V9R</span> <span class="cm-operator">=</span> <span class="cm-number">123</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">var5</span> <span class="cm-operator">=</span> <span class="cm-number">123</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">var_4</span> <span class="cm-operator">=</span> <span class="cm-number">123</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">_var</span> <span class="cm-operator">=</span> <span class="cm-number">123</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">va_r</span> <span class="cm-operator">=</span> <span class="cm-number">123</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">V_12_R</span> <span class="cm-operator">=</span> <span class="cm-number">123</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">Aa1_</span> <span class="cm-operator">=</span> <span class="cm-number">123</span></span></pre>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div style="width: 84%;"
+																style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 296px;">
+															</div>
+															<div style="width: 84%;" class="CodeMirror-gutters"
+																style="display: none; height: 326px;"></div>
+														</div>
+													</div>
+												</div>
+												<h3><span id="mthal_hayy_az_antkhab_nadrst_nam_mtghyr"><strong>مثال هایی
+															از
+															انتخاب نادرست نام متغیر</strong></span></h3>
+												<div style="width: 84%;" class="wp-block-codemirror-blocks code-block " id="6">
+													<pre class="CodeMirror"
+														data-setting="{&quot;mode&quot;:&quot;python&quot;,&quot;mime&quot;:&quot;text/x-python&quot;,&quot;theme&quot;:&quot;dracula&quot;,&quot;lineNumbers&quot;:false,&quot;lineWrapping&quot;:false,&quot;styleActiveLine&quot;:false,&quot;readOnly&quot;:true,&quot;align&quot;:&quot;&quot;}"
+														id="code-block-6" style="display: none;">12var = 123
+2_var = 123
+3VAR_r = 123
+5@_VAr = 123
+#var = 123
+$2var = 123
+var*! = 123
+_var!@ = 123
+var 2 = 123
+v ar = 123
+VA R = 123
+VA# R = 123
+3 var = 123
+print = 123
+def = 123
+if = 123</pre>
+													<div style="width: 84%;" class="CodeMirror CodeMirror-simplescroll cm-s-dracula">
+														<div style="width: 84%;"
+															style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;">
+															
+														</div>
+														<div  class="CodeMirror-simplescroll-horizontal"
+															cm-not-content="true" style="display: none;">
+															<div ></div>
+														</div>
+														<div  class="CodeMirror-simplescroll-vertical"
+															cm-not-content="true" style="display: none; bottom: 0px;">
+															<div  style="height: 251.932px; top: 0px;"></div>
+														</div>
+														<div  class="CodeMirror-scrollbar-filler" cm-not-content="true">
+														</div>
+														<div  class="CodeMirror-gutter-filler" cm-not-content="true">
+														</div>
+														<div style="width: 84;" class="CodeMirror-scroll" tabindex="-1">
+															
+															<div style="width: 84%;"
+																style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 520px;">
+															</div>
+															<div style="width: 84%;" class="CodeMirror-gutters"
+																style="display: none; height: 550px;"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<h2 style="text-align: right;font-family:'b titr';font-weight:400;font-style:normal"
+											class="vc_custom_heading us_custom_907ca5ec"><span
+												id="klmat_klydy_paytwn">کلمات
+												کلیدی پایتون</span></h2>
+										<div style="width: 84%;" class="w-image align_none">
+											<div style="width: 84%;" class="w-image-h"><img width="1024" height="550"
+													src="./images/Untitled-1-1024x550.png"
+										</div>
+										<div style="width: 84%;" class="wpb_text_column us_custom_35e520c0">
+											<div style="width: 84%;" class="wpb_wrapper">
+												<p>کلمات کلیدی پایتون همان دستوراتی هستند که ما در طول برنامه از آنها
+													استفاده می
+													کنیم. این کلمات رزرو شده هستند و ما نمیتوانیم از این کلمات برای نام
+													گذاری
+													متغیرها کلاس ها و یا توابع استفاده کنیم.</p>
+											</div>
+										</div>
+										<h2 style="text-align: right;font-family:'b titr';font-weight:400;font-style:normal"
+											class="vc_custom_heading us_custom_907ca5ec"><span id="dstwr_print">دستور
+												print</span></h2>
+										<div style="width: 84%;" class="wpb_text_column us_custom_35e520c0">
+											<div style="width: 84%;" class="wpb_wrapper">
+												<p>یکی از پرکاربرد ترین دستورات زبان برنامه نویسی پایتون، دستور Print می
+													باشد.
+													همانطور که از نام آن پیداست این وظیفه این دستور چاپ کردن یا نمایش
+													دادن چیزی
+													می باشد. یکی از دلایل محبوبیت پایتون سادگی آن است. همانطور که می
+													بینید دستور
+													Print در پایتوت معادل همان معنی Print در زبان انگایسی است. این یعنی
+													این
+													زبان، به زبان انسان خیلی نزدیک است (زبان سطح بالا) و همچنین کلمات
+													کلیدی
+													کمتری دارد.</p>
+												<h3><span id="chap_mqdar_mtghyrha_ba_dstwr_Print"><strong>چاپ مقدار
+															متغیرها با
+															دستور Print</strong></span></h3>
+												<p>به عنوان مثال ما متغیری داریم که داده ای عددی را در خود نگه می دارد.
+													می
+													خواهیم با استفاده از دستور Print مقدار این متغیر را نمایش دهیم یا در
+													خروجی
+													چاپ کنیم. به این صورت عمل میکنیم:</p>
+												<div style="width: 84%;" class="wp-block-codemirror-blocks code-block " id="7">
+													<pre class="CodeMirror"
+														data-setting="{&quot;mode&quot;:&quot;python&quot;,&quot;mime&quot;:&quot;text/x-python&quot;,&quot;theme&quot;:&quot;dracula&quot;,&quot;lineNumbers&quot;:false,&quot;lineWrapping&quot;:false,&quot;styleActiveLine&quot;:false,&quot;readOnly&quot;:true,&quot;align&quot;:&quot;&quot;}"
+														id="code-block-7" style="display: none;">Number = 123
+
+print (Number)</pre>
+													<div style="width: 84%;" class="CodeMirror CodeMirror-simplescroll cm-s-dracula">
+														<div style="width: 84%;"
+															style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;">
+															
+														</div>
+														<div style="width: 84%;" class="CodeMirror-simplescroll-horizontal"
+															cm-not-content="true" style="display: none;">
+															<div ></div>
+														</div>
+														<div  class="CodeMirror-simplescroll-vertical"
+															cm-not-content="true" style="display: none;">
+															<div ></div>
+														</div>
+														<div  class="CodeMirror-scrollbar-filler" cm-not-content="true">
+														</div>
+														<div  class="CodeMirror-gutter-filler" cm-not-content="true">
+														</div>
+														<div  class="CodeMirror-scroll" tabindex="-1">
+															<div  class="CodeMirror-sizer"
+																style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; min-height: 104px; min-width: 141.438px; padding-right: 0px; padding-bottom: 0px;">
+																<div  style="position: relative; top: 0px;">
+																	<div  class="CodeMirror-lines" role="presentation">
+																		<div  role="presentation"
+																			style="position: relative; outline: none;">
+																			<div  class="CodeMirror-measure"></div>
+																			<div  class="CodeMirror-measure"></div>
+																			<div 
+																				style="position: relative; z-index: 1;">
+																			</div>
+																			<div  class="CodeMirror-cursors">
+																				<div  class="CodeMirror-cursor"
+																					style="left: 4px; top: 0px; height: 32px;">
+																					&nbsp;</div>
+																			</div>
+																			<div  class="CodeMirror-code"
+																				role="presentation">
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">Number</span> <span class="cm-operator">=</span> <span class="cm-number">123</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">print</span> (<span class="cm-variable">Number</span>)</span></pre>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div 
+																style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 104px;">
+															</div>
+															<div  class="CodeMirror-gutters"
+																style="display: none; height: 134px;"></div>
+														</div>
+													</div>
+												</div>
+												<p>همانطور که مشاهده می کنید برای چاپ مقدار متغیر دستور Print را نوشتیم
+													و بعد
+													پرانتز باز و بسته و داخل پرانتز نام متغیری که ساخته بودیم را نوشتیم.
+													دقت
+													کنید که باید نام متغیر را دقیق وارد کنید. به عنوان مثال اگر به جای
+													Number از
+													number استفاده کنید، دستور اجرا نمی شود و مفسر پایتون وجود یک خطا را
+													به شما
+													گوشزد می کند. برای بقیه متغیرها هم به همین صورت عمل کنید.</p>
+												<p><strong>نکته:</strong> فاصله در پایتون فقط در اول خط قبل از دستورات
+													مهم
+													هستند. در بقیه جاها استفاده یا عدم استفاده از فاصله space مشکل یا
+													خطایی
+													ایجاد نمی کند. به عنوان مثال اگر شما بعد از نام متغیر فاصله ایجاد
+													نکنید و
+													علامت = قرار دهید و بعد از آن هم فاصله ای قرار ندهید و مقدار را وارد
+													کنید،
+													خطایی نمایش داده نمی شود و متغیر شما به درستی ساخته شده&nbsp; است.
+													برای
+													دستور print&nbsp; و سایر دستورات هم این قاعده پابرجاست.</p>
+												<p>در مورد اینکه دقیقا در چه جاهایی و به چه علت گذاشتن یا نذاشتن فاصله
+													باعث
+													ایجاد مشکل می شود، در درس های بعدی توضیح خواهیم داد. و خودتان هم به
+													مرور هر
+													چه بیشتر با پایتون کار کنید متوجه می شوید.</p>
+												<h3><span id="chap_dw_ya_chnd_mtghyr_ba_dstwr_Print"><strong>چاپ دو یا
+															چند متغیر
+															با دستور Print</strong></span></h3>
+												<p>در صورتی که چند متغیر داشته باشید و بخواهید آن ها تتها با یک دستور
+													Print چاپ
+													کنید، باید به این صورت عمل کنید:</p>
+												<div  class="wp-block-codemirror-blocks code-block " id="8">
+													<pre class="CodeMirror"
+														data-setting="{&quot;mode&quot;:&quot;python&quot;,&quot;mime&quot;:&quot;text/x-python&quot;,&quot;theme&quot;:&quot;dracula&quot;,&quot;lineNumbers&quot;:false,&quot;lineWrapping&quot;:false,&quot;styleActiveLine&quot;:false,&quot;readOnly&quot;:true,&quot;align&quot;:&quot;&quot;}"
+														id="code-block-8" style="display: none;">name = "mohammad"
+age = 22
+
+print (name , age)</pre>
+													<div  class="CodeMirror CodeMirror-simplescroll cm-s-dracula">
+														<div 
+															style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;">
+															
+														</div>
+														<div  class="CodeMirror-simplescroll-horizontal"
+															cm-not-content="true" style="display: none;">
+															<div ></div>
+														</div>
+														<div  class="CodeMirror-simplescroll-vertical"
+															cm-not-content="true" style="display: none;">
+															<div ></div>
+														</div>
+														<div  class="CodeMirror-scrollbar-filler" cm-not-content="true">
+														</div>
+														<div  class="CodeMirror-gutter-filler" cm-not-content="true">
+														</div>
+														<div  class="CodeMirror-scroll" tabindex="-1">
+															<div  class="CodeMirror-sizer"
+																style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; min-height: 136px; min-width: 179.859px; padding-right: 0px; padding-bottom: 0px;">
+																<div  style="position: relative; top: 0px;">
+																	<div  class="CodeMirror-lines" role="presentation">
+																		<div  role="presentation"
+																			style="position: relative; outline: none;">
+																			<div  class="CodeMirror-measure"></div>
+																			<div  class="CodeMirror-measure"></div>
+																			<div 
+																				style="position: relative; z-index: 1;">
+																			</div>
+																			<div  class="CodeMirror-cursors">
+																				<div  class="CodeMirror-cursor"
+																					style="left: 4px; top: 0px; height: 32px;">
+																					&nbsp;</div>
+																			</div>
+																			<div  class="CodeMirror-code"
+																				role="presentation">
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">name</span> <span class="cm-operator">=</span> <span class="cm-string">"mohammad"</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">age</span> <span class="cm-operator">=</span> <span class="cm-number">22</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">print</span> (<span class="cm-variable">name</span> , <span class="cm-variable">age</span>)</span></pre>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div 
+																style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 136px;">
+															</div>
+															<div  class="CodeMirror-gutters"
+																style="display: none; height: 166px;"></div>
+														</div>
+													</div>
+												</div>
+												<p>&nbsp;</p>
+												<p>مقدار متغیرها میتواند در طول برنامه تغییر کند یا نوعش عوض شود. در
+													مثال زیر
+													مقدار متغیر name در ابتدا ali بود و در ادامه به mohammad تغییر کرد.
+													دستور
+													print آخرین تغییراتی که در مقدار متغیر ایجاد شده است را نمایش می هد.
+												</p>
+												<div  class="wp-block-codemirror-blocks code-block " id="9">
+													<pre class="CodeMirror"
+														data-setting="{&quot;mode&quot;:&quot;python&quot;,&quot;mime&quot;:&quot;text/x-python&quot;,&quot;theme&quot;:&quot;dracula&quot;,&quot;lineNumbers&quot;:false,&quot;lineWrapping&quot;:false,&quot;styleActiveLine&quot;:false,&quot;readOnly&quot;:true,&quot;align&quot;:&quot;&quot;}"
+														id="code-block-9" style="display: none;">name = "ali"
+name = "mohammad'
+print (name)</pre>
+													<div  class="CodeMirror CodeMirror-simplescroll cm-s-dracula">
+														<div 
+															style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;">
+															
+														</div>
+														<div  class="CodeMirror-simplescroll-horizontal"
+															cm-not-content="true" style="display: none;">
+															<div ></div>
+														</div>
+														<div  class="CodeMirror-simplescroll-vertical"
+															cm-not-content="true" style="display: none;">
+															<div ></div>
+														</div>
+														<div  class="CodeMirror-scrollbar-filler" cm-not-content="true">
+														</div>
+														<div  class="CodeMirror-gutter-filler" cm-not-content="true">
+														</div>
+														<div  class="CodeMirror-scroll" tabindex="-1">
+															<div  class="CodeMirror-sizer"
+																style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; min-height: 104px; min-width: 170.25px; padding-right: 0px; padding-bottom: 0px;">
+																<div  style="position: relative; top: 0px;">
+																	<div  class="CodeMirror-lines" role="presentation">
+																		<div  role="presentation"
+																			style="position: relative; outline: none;">
+																			<div  class="CodeMirror-measure"></div>
+																			<div  class="CodeMirror-measure"></div>
+																			<div 
+																				style="position: relative; z-index: 1;">
+																			</div>
+																			<div  class="CodeMirror-cursors">
+																				<div  class="CodeMirror-cursor"
+																					style="left: 4px; top: 0px; height: 32px;">
+																					&nbsp;</div>
+																			</div>
+																			<div  class="CodeMirror-code"
+																				role="presentation">
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">name</span> <span class="cm-operator">=</span> <span class="cm-string">"ali"</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">name</span> <span class="cm-operator">=</span> <span class="cm-string">"mohammad'</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">print</span> (<span class="cm-variable">name</span>)</span></pre>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div 
+																style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 104px;">
+															</div>
+															<div  class="CodeMirror-gutters"
+																style="display: none; height: 134px;"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<h2 style="text-align: right;font-family:'b titr';font-weight:400;font-style:normal"
+											class="vc_custom_heading us_custom_907ca5ec"><span
+												id="tghyyr_nw_mtghyrha">تغییر نوع
+												متغیرها</span></h2>
+										<div  class="wpb_text_column us_custom_35e520c0">
+											<div  class="wpb_wrapper">
+												<p>در خط اول قطعه کد زیر با استفاده از دستور str که مخفف String است، به
+													پایتون
+													میگوییم که این عدد از نوع رشته است “5”. و یا در خط بعدی با استفاده
+													از دستور
+													int که مخفف integer است، به پایتون می گوییم که این متغیر را از نوع
+													اعداد
+													صحیح یا int در نظر بگیر. برای اعداد اعشاری هم به همین صورت عمل می
+													کنیم. بعد
+													از قرار دادن دستور float قبل از مقدار متغیر، پایتون آن را اعشاری در
+													نظر
+													گرفته و به صورت 3.0 نمایش می دهد.</p>
+												<div  class="wp-block-codemirror-blocks code-block " id="10">
+													<pre class="CodeMirror"
+														data-setting="{&quot;mode&quot;:&quot;python&quot;,&quot;mime&quot;:&quot;text/x-python&quot;,&quot;theme&quot;:&quot;dracula&quot;,&quot;lineNumbers&quot;:false,&quot;lineWrapping&quot;:false,&quot;styleActiveLine&quot;:false,&quot;readOnly&quot;:true,&quot;align&quot;:&quot;&quot;}"
+														id="code-block-10" style="display: none;">var1 = str(5)
+var2 = int(6)
+var3 = float(3)
+print (var1 , var2 , var3)</pre>
+													<div  class="CodeMirror CodeMirror-simplescroll cm-s-dracula">
+														<div 
+															style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;">
+															
+														</div>
+														<div  class="CodeMirror-simplescroll-horizontal"
+															cm-not-content="true" style="display: none;">
+															<div ></div>
+														</div>
+														<div  class="CodeMirror-simplescroll-vertical"
+															cm-not-content="true" style="display: none;">
+															<div ></div>
+														</div>
+														<div  class="CodeMirror-scrollbar-filler" cm-not-content="true">
+														</div>
+														<div  class="CodeMirror-gutter-filler" cm-not-content="true">
+														</div>
+														<div  class="CodeMirror-scroll" tabindex="-1">
+															<div  class="CodeMirror-sizer"
+																style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; min-height: 136px; min-width: 256.672px; padding-right: 0px; padding-bottom: 0px;">
+																<div  style="position: relative; top: 0px;">
+																	<div  class="CodeMirror-lines" role="presentation">
+																		<div  role="presentation"
+																			style="position: relative; outline: none;">
+																			<div  class="CodeMirror-measure"></div>
+																			<div  class="CodeMirror-measure"></div>
+																			<div 
+																				style="position: relative; z-index: 1;">
+																			</div>
+																			<div  class="CodeMirror-cursors">
+																				<div  class="CodeMirror-cursor"
+																					style="left: 4px; top: 0px; height: 32px;">
+																					&nbsp;</div>
+																			</div>
+																			<div  class="CodeMirror-code"
+																				role="presentation">
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">var1</span> <span class="cm-operator">=</span> <span class="cm-builtin">str</span>(<span class="cm-number">5</span>)</span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">var2</span> <span class="cm-operator">=</span> <span class="cm-builtin">int</span>(<span class="cm-number">6</span>)</span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">var3</span> <span class="cm-operator">=</span> <span class="cm-builtin">float</span>(<span class="cm-number">3</span>)</span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">print</span> (<span class="cm-variable">var1</span> , <span class="cm-variable">var2</span> , <span class="cm-variable">var3</span>)</span></pre>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div 
+																style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 136px;">
+															</div>
+															<div  class="CodeMirror-gutters"
+																style="display: none; height: 166px;"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<h2 style="text-align: right;font-family:'b titr';font-weight:400;font-style:normal"
+											class="vc_custom_heading us_custom_907ca5ec"><span id="dstwr_type">دستور
+												type</span>
+										</h2>
+										<div  class="wpb_text_column us_custom_35e520c0">
+											<div  class="wpb_wrapper">
+												<p>کلمه type&nbsp; در انگلیسی به معنای “نوع” می باشد. در زبان برنامه
+													نویسی
+													پایتون هم برای مطلع شدن از نوع یک متغیر از دستور type استفاده می
+													کنیم.</p>
+												<p>&nbsp;</p>
+												<div  class="wp-block-codemirror-blocks code-block " id="11">
+													<pre class="CodeMirror"
+														data-setting="{&quot;mode&quot;:&quot;python&quot;,&quot;mime&quot;:&quot;text/x-python&quot;,&quot;theme&quot;:&quot;dracula&quot;,&quot;lineNumbers&quot;:false,&quot;lineWrapping&quot;:false,&quot;styleActiveLine&quot;:false,&quot;readOnly&quot;:true,&quot;align&quot;:&quot;&quot;}"
+														id="code-block-11" style="display: none;">name = "mohammad"
+age = 22
+var1 = "22"
+var2 = "mohammad22"
+var3 = 123j
+var4 = 12.5
+
+print (type(name))
+print (type(age))
+print (type(var1))
+print (type(var2))
+print (type(var3))
+print (type(var4))</pre>
+													<div  class="CodeMirror CodeMirror-simplescroll cm-s-dracula">
+														<div 
+															style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;">
+															
+														</div>
+														<div  class="CodeMirror-simplescroll-horizontal"
+															cm-not-content="true" style="display: none;">
+															<div ></div>
+														</div>
+														<div  class="CodeMirror-simplescroll-vertical"
+															cm-not-content="true" style="display: none; bottom: 0px;">
+															<div  style="height: 307.277px; top: 0px;"></div>
+														</div>
+														<div  class="CodeMirror-scrollbar-filler" cm-not-content="true">
+														</div>
+														<div  class="CodeMirror-gutter-filler" cm-not-content="true">
+														</div>
+														<div  class="CodeMirror-scroll" tabindex="-1">
+														
+															<div 
+																style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 424px;">
+															</div>
+															<div  class="CodeMirror-gutters"
+																style="display: none; height: 454px;"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<h2 style="text-align: right;font-family:'b titr';font-weight:400;font-style:normal"
+											class="vc_custom_heading us_custom_907ca5ec"><span
+												id="akhtsas_yk_mqdar_bh_chnd_mtghyr_bh_swrt_hmzman">اختصاص یک مقدار به
+												چند متغیر
+												به صورت همزمان</span></h2>
+										<div  class="wpb_text_column us_custom_35e520c0">
+											<div  class="wpb_wrapper">
+												<p>در این بخش ما از سه متغیر از نوع رشته استفاده کردیم و یک مقدار را به
+													همه آنها
+													تخصیبص دادیم. درخط بعدی با استفاده از دستور print مقدار متغیرها را
+													نمایش
+													دادیم. همچنین می توانیم مقدار هر متغیر را به صورت جداگانه در خطی
+													دیگر با
+													دستور print نمایش دهیم.</p>
+												<div  class="wp-block-codemirror-blocks code-block " id="12">
+													<pre class="CodeMirror"
+														data-setting="{&quot;mode&quot;:&quot;python&quot;,&quot;mime&quot;:&quot;text/x-python&quot;,&quot;theme&quot;:&quot;dracula&quot;,&quot;lineNumbers&quot;:false,&quot;lineWrapping&quot;:false,&quot;styleActiveLine&quot;:false,&quot;readOnly&quot;:true,&quot;align&quot;:&quot;&quot;}"
+														id="code-block-12" style="display: none;">name1 = name2 = name3 = "mohammad"
+print (name1 , name2 , name3)</pre>
+													<div  class="CodeMirror CodeMirror-simplescroll cm-s-dracula">
+														<div 
+															style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;">
+															
+														</div>
+														<div  class="CodeMirror-simplescroll-horizontal"
+															cm-not-content="true" style="display: none;">
+															<div ></div>
+														</div>
+														<div  class="CodeMirror-simplescroll-vertical"
+															cm-not-content="true" style="display: none;">
+															<div ></div>
+														</div>
+														<div  class="CodeMirror-scrollbar-filler" cm-not-content="true">
+														</div>
+														<div  class="CodeMirror-gutter-filler" cm-not-content="true">
+														</div>
+														<div  class="CodeMirror-scroll" tabindex="-1">
+															<div  class="CodeMirror-sizer"
+																style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; min-height: 72px; min-width: 333.547px; padding-right: 0px; padding-bottom: 0px;">
+																<div  style="position: relative; top: 0px;">
+																	<div  class="CodeMirror-lines" role="presentation">
+																		<div  role="presentation"
+																			style="position: relative; outline: none;">
+																			<div  class="CodeMirror-measure"></div>
+																			<div  class="CodeMirror-measure"></div>
+																			<div 
+																				style="position: relative; z-index: 1;">
+																			</div>
+																			<div  class="CodeMirror-cursors">
+																				<div  class="CodeMirror-cursor"
+																					style="left: 4px; top: 0px; height: 32px;">
+																					&nbsp;</div>
+																			</div>
+																			<div  class="CodeMirror-code"
+																				role="presentation">
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">name1</span> <span class="cm-operator">=</span> <span class="cm-variable">name2</span> <span class="cm-operator">=</span> <span class="cm-variable">name3</span> <span class="cm-operator">=</span> <span class="cm-string">"mohammad"</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">print</span> (<span class="cm-variable">name1</span> , <span class="cm-variable">name2</span> , <span class="cm-variable">name3</span>)</span></pre>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div 
+																style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 72px;">
+															</div>
+															<div  class="CodeMirror-gutters"
+																style="display: none; height: 102px;"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<h2 style="text-align: right;font-family:'b titr';font-weight:400;font-style:normal"
+											class="vc_custom_heading us_custom_907ca5ec"><span
+												id="akhtsas_chnd_mqdar_bh_chnd_mtghyr_bh_swrt_hmzman">اختصاص چند مقدار
+												به چند
+												متغیر به صورت همزمان</span></h2>
+										<div  class="wpb_text_column us_custom_35e520c0">
+											<div  class="wpb_wrapper">
+												<p>برخلاف بخش قبلی، در این بخش برای اینکه چند مقدار را به چند مقدار
+													تخصیص بدهیم،
+													باید از کاراکتر ” , ” استفاده کنیم. به این صورت که به حای قرار دادن
+													مساوی
+													بین متغیرها از ویرگول (,) استفاده میکنیم. سپس علامت تخصیص = اضافه می
+													شود و
+													در آخر مقادیر متغیرها همراه با علامت ویرگول (,) د ربین شان، درج می
+													شوند.</p>
+												<div  class="wp-block-codemirror-blocks code-block " id="13">
+													<pre class="CodeMirror"
+														data-setting="{&quot;mode&quot;:&quot;python&quot;,&quot;mime&quot;:&quot;text/x-python&quot;,&quot;theme&quot;:&quot;dracula&quot;,&quot;lineNumbers&quot;:false,&quot;lineWrapping&quot;:false,&quot;styleActiveLine&quot;:false,&quot;readOnly&quot;:true,&quot;align&quot;:&quot;&quot;}"
+														id="code-block-13" style="display: none;">name , age , number = "mohammad" , 22 , 19.5
+print (name)
+print (age)
+print (number)
+print (name , age , number)</pre>
+													<div  class="CodeMirror CodeMirror-simplescroll cm-s-dracula">
+														<div 
+															style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;">
+															
+														</div>
+														<div  class="CodeMirror-simplescroll-horizontal"
+															cm-not-content="true" style="display: none;">
+															<div ></div>
+														</div>
+														<div  class="CodeMirror-simplescroll-vertical"
+															cm-not-content="true" style="display: none;">
+															<div ></div>
+														</div>
+														<div  class="CodeMirror-scrollbar-filler" cm-not-content="true">
+														</div>
+														<div  class="CodeMirror-gutter-filler" cm-not-content="true">
+														</div>
+														<div  class="CodeMirror-scroll" tabindex="-1">
+															<div  class="CodeMirror-sizer"
+																style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; min-height: 168px; min-width: 429.531px; padding-right: 0px; padding-bottom: 0px;">
+																<div  style="position: relative; top: 0px;">
+																	<div  class="CodeMirror-lines" role="presentation">
+																		<div  role="presentation"
+																			style="position: relative; outline: none;">
+																			<div  class="CodeMirror-measure"></div>
+																			<div  class="CodeMirror-measure"></div>
+																			<div 
+																				style="position: relative; z-index: 1;">
+																			</div>
+																			<div  class="CodeMirror-cursors">
+																				<div  class="CodeMirror-cursor"
+																					style="left: 4px; top: 0px; height: 32px;">
+																					&nbsp;</div>
+																			</div>
+																			<div  class="CodeMirror-code"
+																				role="presentation">
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">name</span> , <span class="cm-variable">age</span> , <span class="cm-variable">number</span> <span class="cm-operator">=</span> <span class="cm-string">"mohammad"</span> , <span class="cm-number">22</span> , <span class="cm-number">19.5</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">print</span> (<span class="cm-variable">name</span>)</span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">print</span> (<span class="cm-variable">age</span>)</span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">print</span> (<span class="cm-variable">number</span>)</span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">print</span> (<span class="cm-variable">name</span> , <span class="cm-variable">age</span> , <span class="cm-variable">number</span>)</span></pre>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div 
+																style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 168px;">
+															</div>
+															<div  class="CodeMirror-gutters"
+																style="display: none; height: 198px;"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<h2 style="text-align: right;font-family:'b titr';font-weight:400;font-style:normal"
+											class="vc_custom_heading us_custom_907ca5ec"><span
+												id="Unpack_krdn_ya_astkhraj_mqadyr">Unpack کردن یا استخراج مقادیر</span>
+										</h2>
+										<div  class="wpb_text_column us_custom_35e520c0">
+											<div  class="wpb_wrapper">
+												<p>یکی از قابلیت هایی که در زبان پایتون وجود دارد، عملیات Unpack کردن
+													مقادیر
+													است. Unpack کردن به این معناست که به عنوان مثال ما مقادیری را از یک
+													لیست،
+													مجموعه و … در متغیرها استخراح کنیم. د لیست ها در درس های بعدی به
+													صورت کامل
+													بررسی توضیح داده خواهد شد، اما در همین حد بدانید که می توان مجموعه
+													ای از
+													مقادیر را در لیست ها نگه داری کرد. درو اقع ما لیست ها را باز کرده و
+													هر یک از
+													مقادیر لیست را را در متغیری جداگانه ذخیره می کنیم. مانند این است که
+													وسایل
+													موجود در یک جعبه بزرگ را درآورده و در جعبه های کوچکتر قرار می دهیم.
+												</p>
+												<p>در مثال زیر همانظور که مشاهده می کنید، در خط اول ما یک لیست داریم که
+													نام سه
+													دانش آموز را در خود نگه می دارد. در خط دوم سه متغیر تعریف کردیم و با
+													ویرگول
+													آنها را جدا کردیم. سپس علامت تخصیص و در انتها نام لیستی که در خط اول
+													ساختیم
+													درج شده ا ست. مثل تمام مثال های بالا در اینجا هم عملگر تخصیص مقادیر
+													موجود در
+													لیستی که ساختیم را در هر یک از این سه متغیر می ریزد. و در خط های
+													بعدی با
+													استفاده از دستور print مقادیر هر متغیر چاپ شده است.</p>
+												<div  class="wp-block-codemirror-blocks code-block " id="14">
+													<pre class="CodeMirror"
+														data-setting="{&quot;mode&quot;:&quot;python&quot;,&quot;mime&quot;:&quot;text/x-python&quot;,&quot;theme&quot;:&quot;dracula&quot;,&quot;lineNumbers&quot;:false,&quot;lineWrapping&quot;:false,&quot;styleActiveLine&quot;:false,&quot;readOnly&quot;:true,&quot;align&quot;:&quot;&quot;}"
+														id="code-block-14" style="display: none;">list_students = ["ali" , "mohammad" , "reza" ]
+student1 , student2 , student3 = list_students
+print (student1)
+print (student2)
+print (student3)</pre>
+													<div  class="CodeMirror CodeMirror-simplescroll cm-s-dracula">
+														<div 
+															style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;">
+															
+														</div>
+														<div  class="CodeMirror-simplescroll-horizontal"
+															cm-not-content="true" style="display: none;">
+															<div ></div>
+														</div>
+														<div  class="CodeMirror-simplescroll-vertical"
+															cm-not-content="true" style="display: none;">
+															<div ></div>
+														</div>
+														<div  class="CodeMirror-scrollbar-filler" cm-not-content="true">
+														</div>
+														<div  class="CodeMirror-gutter-filler" cm-not-content="true">
+														</div>
+														<div  class="CodeMirror-scroll" tabindex="-1">
+															<div  class="CodeMirror-sizer"
+																style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; min-height: 168px; min-width: 448.719px; padding-right: 0px; padding-bottom: 0px;">
+																<div  style="position: relative; top: 0px;">
+																	<div  class="CodeMirror-lines" role="presentation">
+																		<div  role="presentation"
+																			style="position: relative; outline: none;">
+																			<div  class="CodeMirror-measure"></div>
+																			<div  class="CodeMirror-measure"></div>
+																			<div 
+																				style="position: relative; z-index: 1;">
+																			</div>
+																			<div  class="CodeMirror-cursors">
+																				<div  class="CodeMirror-cursor"
+																					style="left: 4px; top: 0px; height: 32px;">
+																					&nbsp;</div>
+																			</div>
+																			<div  class="CodeMirror-code"
+																				role="presentation">
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">list_students</span> <span class="cm-operator">=</span> [<span class="cm-string">"ali"</span> , <span class="cm-string">"mohammad"</span> , <span class="cm-string">"reza"</span> ]</span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">student1</span> , <span class="cm-variable">student2</span> , <span class="cm-variable">student3</span> <span class="cm-operator">=</span> <span class="cm-variable">list_students</span></span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">print</span> (<span class="cm-variable">student1</span>)</span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">print</span> (<span class="cm-variable">student2</span>)</span></pre>
+																				<pre class=" CodeMirror-line "
+																					role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">print</span> (<span class="cm-variable">student3</span>)</span></pre>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div 
+																style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 168px;">
+															</div>
+															<div class="CodeMirror-gutters"
+																style="display: none; height: 198px;"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+				</div>
+			</section>
+			<section class="l-section wpb_row height_auto">
+				<div class="l-section-h i-cf">
+					<div
+						class="g-cols via_grid cols_1 laptops-cols_inherit tablets-cols_inherit mobiles-cols_1 valign_top type_default">
+						<div class="wpb_column vc_column_container us_custom_c8287ce4">
+							<div class="vc_column-inner"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="l-section wpb_row height_auto">
+				<div class="l-section-h i-cf"></div>
+			</section>
+		</main>
+
+		</section>
+
+		<footer id="main-footer"></footer>
+		</main>
+
+
+
+		<div id="fh5co-page">
+			<a href="work.html#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+			<aside id="fh5co-aside" role="complementary" class="border js-fullheight" style="height: 100%;width: 15%;">
+				<h1 id="fh5co-logo"><a href="index.html"><img src="./content_files/logo.png"
+							alt=""></a></h1>
+				<nav id="fh5co-main-menu" role="navigation">
+					<ul>
+						<li><a style="font-family:'b titr';" href="index.html">صفحه اصلی</a></li>
+						<li><a style="font-family:'b titr';" href="portfolio.html">زبان ها</a></li>
+						<li><a style="font-family:'b titr';" href="about.html">درباره</a></li>
+						<li><a style="font-family:'b titr';" href="contact.html">موضوع ها</a></li>
+					</ul>
+				</nav>
+				<div class="fh5co-footer">
+					<p><small>Developed by mehrabnovin </small></p>
+					<ul>
+						<li><a href="work.html#"><i class="icon-facebook"></i></a></li>
+						<li><a href="work.html#"><i class="icon-twitter"></i></a></li>
+						<li><a href="work.html#"><i class="icon-instagram"></i></a></li>
+						<li><a href="work.html#"><i class="icon-linkedin"></i></a></li>
+					</ul>
+				</div>
+			</aside>
+			<div id="fh5co-main">
+				<div class="fh5co-narrow-content">
+					<!----------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+					<div class="row work-pagination animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+						<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0">
+
+							<div class="col-md-4 col-sm-4 col-xs-4 text-center">
+								<a style="text-align:left;" href="if.html"><i class="icon-long-arrow-left"></i>
+									<span>مطلب قبلی</span></a>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4 text-center">
+								<a style="text-align:right ;" href="loop.html"><span>مطلب بعدی</span> <i
+										class="icon-long-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+
+</html>

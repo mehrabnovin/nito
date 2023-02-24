@@ -1,0 +1,590 @@
+
+<!-- Complate -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>For & While & Foreach</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Face-->
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="./content_files/css" rel="stylesheet" type="text/css">
+	<link href="./content_files/css(1)" rel="stylesheet" type="text/css">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="./content_files/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="./content_files/icomoon.css">
+	<!--   -->
+	<link rel="stylesheet" href="./content_files/bootstrap.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="./content_files/owl.carousel.min.css">
+	<link rel="stylesheet" href="./content_files/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="./content_files/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="./content_files/modernizr-2.6.2.min.js.download"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	<style>
+		.nazm {
+			direction: ltr;
+		}
+
+		h1,
+		h2,
+		h3 {
+			font-family: 'b titr';
+		}
+
+		img {
+			direction: ltr;
+		}
+	</style>
+
+
+</head>
+
+<body dir="rtl">
+	<DIv class="ali">
+		<div class="col-md-12 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+			<figure class="text-center">
+				<center>
+					<img src="./images/unnamed.png" class="img-responsive" width="25%" style="
+						margin-top: 5%;
+						border-radius: 20%;">
+				</center>
+			</figure>
+		</div>
+		<main id="main" style="width: 80%; margin-right: 2%;">
+			<section id="content-container">
+				<section id="breadcrumb-container"></section>
+				<div class="wrapper">
+					<h1 class="article-title" style="font-family: b titr;">آموزش حلقه ها در سی شارپ</h1>
+
+					<div class="p-3">
+						<p>در زبان های برنامه نویسی مواقعی وجود دارد که نیاز است&nbsp;قسمتی از کد ها به صورت تکراری
+							تا زمانی مشخص اجرا شوند. در این مواقع میتوان از حلقه for در زبان سی شارپ استفاد
+							کرد&nbsp;.</p>
+
+						<h2><span style="color:#2980b9">حلقه for</span></h2>
+
+						<p>کلمه رزرو شده&nbsp;<code>for</code>&nbsp;به یک حلقه در زبان برنامه نویسی سی شارپ اشاره
+							دارد. حلقه ی&nbsp;<code>for</code>&nbsp;مجموعه‌ای از دستورات را تا زمانی که شرط مشخص شده
+							در آن &nbsp;صحیح ارزیابی میشود به صورت تکراری اجرا می‌کند.</p>
+
+						<p>در زیر قاعده نوشتاری حلقه&nbsp;<code>for</code>&nbsp;آمده است :</p>
+
+						<pre><code>for (variable initialization; condition; steps)
+{
+//execute this code block as long as condition is satisfied 
+}</code></pre>
+
+						<p>همانطور که در قاعده نوشتاری بالا آمده است حلقه&nbsp;<code>for</code>&nbsp;شامل سه قسمت
+							است. مقدار اولیه (<strong>initialization</strong>)، عبارت شرطی
+							(<strong>condition</strong>)، گام یا شمارنده (<strong>steps</strong>) که هر کدام از آن
+							ها با علامت سمی کالن(;) از هم جدا شده اند. توضیحی از هر قسمت در زیر آمده است:</p>
+
+						<ul>
+							<li><strong>مقداردهی متغیر&nbsp;</strong>: در این قسمت یک متغیر اعلان و مقدار دهی
+								می‌شود. این متغیر در قسمت‌های شرطی و شمارنده استفاده می شود.</li>
+							<li><strong>شرط</strong>&nbsp;: قسمت شرطی در حلقه&nbsp;<code>for</code>&nbsp;شامل یک
+								عبارت بولین است که یک مقدار صحیح و یا ناصحیح را برمیگرداند.</li>
+							<li><strong>گام یا شمارنده</strong>&nbsp;: در این قسمت یک کاهنده و یا افزایش دهنده قرار
+								می گیرد.</li>
+						</ul>
+
+						<p>در زیر نمونه مثال ساده ای از حلقه&nbsp;<code>for</code>&nbsp;آورده شده است :</p>
+
+						<pre><code class="language-cs">using System;
+			
+public class Program
+{
+public static void Main()
+{
+for (int i = 0; i &lt; 10; i++)
+{
+	Console.WriteLine("Value of i: {0}", i);
+}
+}
+}</code></pre>
+
+						<p><span style="color:#000000"><strong>شکل زیر اجرای گام به گام مثال بالا را نشان می دهد
+									:</strong></span></p>
+
+						<p><img alt="" src="" width="100%"></p>
+
+						<h2><span style="color:#000000">حلقه&nbsp; while</span></h2>
+
+						<p>در زبان برنامه نویسی سی شارپ از حلقه ی&nbsp;<code>while</code>&nbsp;برای اجرای مجموعه ای
+							از دستورات به صورت تکراری استفاده میشود.</p>
+
+						<p>قاعده ی نوشتاری حلقه&nbsp;<code>while</code>&nbsp;به شکلی است که در زیر آمده است :</p>
+
+						<pre><code>While(boolean expression)
+{
+//execute code as long as condition returns true
+
+}</code></pre>
+
+						<p>همانطور که در قاعده نوشتاری بالا مشاهده می‌کنید حلقه&nbsp;<code>while</code>&nbsp;شامل یک
+							عبارت شرطی بولین است که مقداری صحیح و یا ناصحیح را برمیگرداند.
+							حلقه&nbsp;<code>while</code>&nbsp;مادامی که عبارت شرطی آن مقداری صحیح را ارزیابی می کند
+							بلاک های کد موجود در بدنه ی خود را به صورت تکراری اجرا می‌کند. در این حلقه ، مقدار دهی
+							اولیه متغیر باید قبل از حلقه انجام گرفته و عمل کاهش و یا افزایش در بدنه حلقه انجام
+							گیرد.حلقه
+							ی&nbsp;<code>while یک حلقه بی نهابت است و تنها فرق این حلقه با حلقه for است.</code>&nbsp;
+						</p>
+
+						<p>در زیر نمونه مثال ساده ای از حلقه ی&nbsp;<code>while</code>&nbsp;آورده شده است :</p>
+
+						<pre><code class="language-cs">using System;
+			
+public class Program
+{
+public static void Main()
+{
+int i = 0;
+
+while (i &lt; 10)
+{
+	Console.WriteLine("Value of i: {0}", i);
+
+	i++;
+}
+}
+}</code></pre>
+
+						<p>در نمونه مثال بالا حلقه&nbsp;<code>while</code>&nbsp;شامل عبارت
+							شرطی&nbsp;<code>i &lt; ۱۰</code>&nbsp;است. در داخل بدنه ی
+							حلقه&nbsp;<code>while</code>&nbsp;مقدار متغیر&nbsp;<code>i</code>&nbsp;در هر بار اجرای
+							&nbsp;حلقه ی یکی افزوده می‌شود (با استفاده از
+							دستور&nbsp;<code>++i</code>&nbsp;).&nbsp;بنابراین حلقه ی فوق تا زمانی که مقدار
+							متغیر&nbsp;<code>i</code>&nbsp;&nbsp;به عدد ۱۰ برسد اجرا می‌شود.</p>
+
+						<p><span style="color:#000">نکته</span> : (استفاده از کلمه ی رزرو شده ی break&nbsp;می
+							توان از کلمه رزرو شده ی&nbsp;<code>break</code>&nbsp;برای خروج از حلقه while استفاده
+							کرد)&nbsp;</p>
+
+						<p><span style="color:#000"><span style="font-size:24px"><strong>حلقه&nbsp;
+										foreach</strong></span></span></p>
+
+						<p>در زبان های برنامه نویسی یک حلقه تکرار، به نام&nbsp; حلقه foreach وجود دارد که می توان با
+							آن روی مجموعه ها یا آرایه ها پیمایش کرد.</p>
+
+						<p>foreach یکی از پرکاربردترین حلقه های تکرار در سی شارپ هست که می توان آن را یک ویژگی کلیدی
+							در زبان سی شارپ به حساب آورد. شما با استفاده از حلقه foreach می توانید روی آرایه ها یا
+							مجموعه ها پیمایش انجام دهید.</p>
+
+						<p>ساختار دستور foreach به شکل زیر است:</p>
+
+						<pre> foreach (var item in collection)
+	{
+				  دستور مورد نظر
+	}</pre>
+
+						<ul>
+							<li><span style="color:#ffffff"><span
+										style="background-color:#000">var&nbsp;</span></span>:&nbsp;در قسمت var
+								بجای آن باید نوع type مورد نظر خود را قرار دهید بفرض اینکه int یا float باشه&nbsp;
+								یا می توان از همان var استفاده کرد.</li>
+							<li><span style="color:#ffffff"><span style="background-color:#000">item</span></span>: به
+								جای این کلمه باید یک
+								اسم بدلخواه وارد کنید می توانید بگذارید همان item بماند.</li>
+							<li><span style="color:#ffffff"><span style="background-color:#000">in</span></span>:
+								این کلمه ثابت است و نشان می دهد که باید روی چه مجموعه یا آرایه ای پیمایش انجام شود.
+							</li>
+							<li><span style="color:#ffffff"><span
+										style="background-color:#000">collection</span></span>: به جای این کلمه
+								باید نام مجموعه یا آرایه ای که می خواهید در آن پیمایش انجام شود را قرار دهید.</li>
+						</ul>
+
+						<pre><code class="language-cs">int[] number = new int[5] { 1, 2, 44, 22, 99 };
+	foreach (var item in number)
+	{
+		Console.Write($" {item} ");
+	}</code></pre>
+
+						<h3><span style="color:#000">کاربرد foreach در پیمایش آرایه ها</span></h3>
+
+						<p><a href="" rel="noopener noreferrer" target="_blank">آرایه ها</a>&nbsp;از مواردی پرکاربرد در
+							امر برنامه نویسی هستند و دسترسی به تمامی عناصر آن با حلقه ها امکان پذیر است و حلقه
+							foreach در این میان کاربرد بیشتری دارد.</p>
+
+						<p>با حلقه for می توان روی آرایه ها پیمایش کرد اما اصول کار آن است تا از foreach استفاده
+							کنید.</p>
+
+						<h3><span style="color:#e74c3c">حال برای پیمایش آرایه&nbsp; foreach بهتره یا for</span></h3>
+
+						<p>همانطور که می بینید با هردو حلقه توانستیم عناصر آرایه را پیمایش کنیم اما در میان حلقه های
+							foreach و for&nbsp; چه تفاوتهایی وجود دارند؟</p>
+
+						<ol>
+							<li>
+								<ol>
+									<li>در دستور for&nbsp; مانیاز داریم که هربار اندیس آرایه را صدا بزنیم اما در
+										دستور foreach لازم نیست. از همه مهمتر اینکه برای پیمایش<a href="">&nbsp;آرایه
+											های دو بعدی</a>&nbsp;و
+										چند بعدی حلقه for کاربرد ندارد و از حلقه foreach استفاده می کنند.</li>
+									<li>در حلقه foreach دیگر نیازی نیست که ما اندیس شمارنده تعریف کنیم و بگوییم از 0
+										شروع کن و یکی به اندیس آرایه اضافه کن تا اینکه به انتهای آرایه برسی. همچنین
+										قابلیت این را دارد که در آرایه های چند بعدی و دو بعدی پیمایش کند.</li>
+								</ol>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</section>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<!-- --------------------------------------------------------------------------- -->
+			<section style="padding-left:;">
+
+	</div>
+	<img src="images/download.png" style="margin-right:33% ;border-radius: 30px;" alt="">
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+
+
+
+	<article style="width:84% ; font-family:b nazanin ; color: #1f2020;padding-right: 2%;">
+		<header>
+			<h1>آموزش کار با حلقه در پایتون</h1>
+		</header>
+		<div class="post-content">
+			<p>به کمک حلقه‌ها که جزء دستورات کنترلی هستند، می‌توانیم در توالی‌ها پیمایش کرده یا یک قطعه کد را چندین بار
+				تکرار کنیم. در این مقاله به آموزش حلقه در پایتون پرداخته و با <span
+					class="has-inline-color has-light-orange-color">۲</span> نوع اصلی و ترفندهای کار با آن‌ها آشنا
+				خواهیم شد.</p>
+			<p>فرض کنید در یک <a href="" target="_blank" rel="noreferrer noopener">لیست پایتون</a> تعدادی عدد دارید که
+				می‌خواهید تمام آن‌ها
+				را با هم جمع کنید. یا یک رشته متنی دارید که می‌خواهید تک به تک کاراکترهای آن را بررسی کنید. شاید بخواهید
+				تا زمانی که یک شرط برقرار بود، برنامه پایتون یک کار ثابت یا مشابه را انجام دهد.</p>
+			<p>برای انجام تمام این‌گونه کارها می‌توان از حلقه‌ها (Python Loops) کمک گرفت. حلقه‌ها یکی از پر کاربردترین
+				دستورات کنترلی هستند.</p>
+			<div id="ez-toc-container"
+				class="ez-toc-v2_0_45_1 ez-toc-wrap-left counter-hierarchy ez-toc-counter ez-toc-container-direction">
+				<div class="ez-toc-title-container">
+					<p class="ez-toc-title">فهرست محتوای آموزش</p>
+					<span class="ez-toc-title-toggle"></span>
+				</div>
+			</div>
+			<h2 id="h-انواع-حلقه-در-پایتون"><span class="ez-toc-section"
+					id="%D8%A7%D9%86%D9%88%D8%A7%D8%B9_%D8%AD%D9%84%D9%82%D9%87_%D8%AF%D8%B1_%D9%BE%D8%A7%DB%8C%D8%AA%D9%88%D9%86"></span>انواع
+				حلقه در پایتون<span class="ez-toc-section-end"></span></h2>
+			<p>در زبان برنامه نویسی پایتون دو نوع اصلی حلقه داریم:</p>
+			<ul>
+				<li>حلقه while</li>
+				<li>حلقه for</li>
+			</ul>
+			<p>هر کدام از این Loopها در جای خاص خود کاربرد دارند ولی کار اصلی هر دو تقریباً مشابه است.</p>
+			<p>اگر کمی خلاقیت را چاشنی کارتان کنید، احتمالاً بتوانید این دو نوع حلقه را به یکدیگر تبدیل کرده و به جای هم
+				استفاده کنید! اما بهتر است از هر کدام در جای مناسب خود بهره ببرید.</p>
+			<p>در تصویر زیر یک فلوچارت (یا روندنما) کلی از عملکرد حلقه‌ها در برنامه‌نویسی نمایش داده شده است.</p>
+			<p>بعضاً نیاز است در ابتدای کار یک یا چند متغیر مورد نیاز را مقداردهی اولیه کنیم. سپس یک شرط برای حلقه تعریف
+				می‌کنیم.</p>
+			<p>مادامی که آن شرط برقرار باشد، قطعه کد درون محدوده حلقه اجرا خواهد شد. پس از هر بار اجرای کد، مجدداً شرط
+				مورد نظر چک می‌شود. هر زمان که شرط برقرار نبود، از حلقه خارج شده و ادامه برنامه اجرا خواهد شد.</p>
+			<div class="wp-block-image">
+				<figure class="aligncenter size-large"></noscript>
+					<figcaption>دیاگرام کلی حلقه‌ها در زبان‌های برنامه‌نویسی</figcaption>
+				</figure>
+			</div>
+			<h2 id="h-حلقه-while-در-پایتون"><span class="ez-toc-section"
+					id="%D8%AD%D9%84%D9%82%D9%87_while_%D8%AF%D8%B1_%D9%BE%D8%A7%DB%8C%D8%AA%D9%88%D9%86"></span>حلقه
+				while در پایتون<span class="ez-toc-section-end"></span></h2>
+			<p>با استفاده از حلقه while می‌توان مجموعه‌ای از کدها را تا زمانی که شرط مورد نظرمان برقرار است اجرا کرد.
+			</p>
+			<p>ساختار (نحو یا <span class="has-inline-color has-blue-color">syntax</span>) <strong>حلقه while در
+					پایتون</strong> به شکل زیر است:</p>
+			<pre class="wp-block-code  language-python"><code class=" language-python"><span class="token keyword">while</span> condition<span class="token punctuation">:</span>
+			<span class="token comment">#code</span></code></pre>
+			<p>condition همان شرط ماست که خروجی آن باید به صورت <span
+					class="has-inline-color has-free-green-color">True</span> یا <span
+					class="has-inline-color has-red-color">False</span> باشد.</p>
+			<p>فرض کنید متغیری به نام <code>i</code> داریم. می‌خواهیم تا زمانی که مقدار آن از عدد <span
+					class="has-inline-color has-light-orange-color">5</span> کمتر است، مقدارش را چاپ کنیم. به قطعه کد
+				زیر دقت کنید:</p>
+			<pre class="wp-block-code  language-python"><code class=" language-python">i <span class="token operator">=</span> <span class="token number">1</span>
+		<span class="token keyword">while</span> i<span class="token operator">&lt;</span><span class="token number">5</span><span class="token punctuation">:</span>
+			<span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+			i<span class="token operator">+=</span><span class="token number">1</span></code></pre>
+			<p>شرط حلقه while را <code>i&lt;5</code> تعریف کردیم. در بدنه حلقه، مقدار متغیر را چاپ کرده و در نهایت مقدار
+				آن را یک واحد افزایش داده‌ایم.</p>
+			<p>اگر در آخرین خط، مقدار متغیر را افزایش ندهیم، حلقه ما تا بی‌نهایت اجرا خواهد شد.</p>
+			<div class="sabz-box note-box blue">
+				<p>در این‌گونه مواقع معمولاً گفته می‌شود به حلقه بی‌نهایت یا Infinitive Loop برخورد کرده‌ایم!</p>
+			</div>
+			<p>خروجی اجرا شده این قطعه کد، به صورت زیر خواهد بود:</p>
+			<pre class="wp-block-preformatted code-output">1
+		2
+		3
+		4</pre>
+			<div class="related-post"></noscript></div>
+			<div class="related-post-title">
+				<p>گرفتن ورودی در پایتون با تابع input</p>
+			</div>
+			</a>
+		</div>
+		<h2 id="h-حلقه-for-در-پایتون"><span class="ez-toc-section"
+				id="%D8%AD%D9%84%D9%82%D9%87_for_%D8%AF%D8%B1_%D9%BE%D8%A7%DB%8C%D8%AA%D9%88%D9%86"></span>حلقه for
+			در پایتون<span class="ez-toc-section-end"></span></h2>
+		<p>حلقه for که به حلقه for in در پایتون هم معروف است بیشتر برای پیمایش (<span
+				class="has-inline-color has-blue-color">Traversal</span>) استفاده می‌شود.</p>
+		<p>فرض کنید یک <a href="" target="_blank" rel="noreferrer noopener">تاپل در python</a> دارید. این تاپل یک نوع
+			توالی از اعضای
+			خودش به ما می‌دهد. اگر بخواهیم روی تک تک این اعضا حرکت یا به اصطلاح پیمایش کنیم، از حلقه for استفاده
+			خواهیم کرد.</p>
+		<p>در حالت کلی، هر چیزی که به ما مجموعه‌ای از توالی عناصر (<span
+				class="has-inline-color has-blue-color">collection</span>) را بدهد می‌توانیم در حلقه for پایتون قرار
+			دهیم؛ نوع‌های داده‌ای لیست، رشته، تاپل و … .</p>
+		<p>ساختار کلی <strong>حلقه for در پایتون</strong> به صورت زیر است:</p>
+		<pre class="wp-block-code  language-python"><code class=" language-python"><span class="token keyword">for</span> Value <span class="token keyword">in</span> Sequence<span class="token punctuation">:</span>
+			<span class="token comment">#execution and use of Value</span></code></pre>
+		<p>سینتکس حلقه for دارای سه بخش اصلی است:</p>
+		<ul>
+			<li><mark style="background-color:rgba(0, 0, 0, 0)"
+					class="has-inline-color has-navy-blue-color">Value</mark>: نام متغیری که در هر بار اجرای حلقه،
+				هر کدام از اعضای مجموعه در آن قرار می‌گیرد.</li>
+			<li><mark style="background-color:rgba(0, 0, 0, 0)"
+					class="has-inline-color has-navy-blue-color">Sequence</mark>: همان مجموعه قابل پیمایش مورد نظر
+				ماست.</li>
+			<li><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-navy-blue-color">بدنه
+					حلقه</mark>: کدهایی که در هر بار اجرای حلقه پردازش می‌شوند.</li>
+		</ul>
+		<p>فرض کنید یک لیست داریم که حاوی اسم پنج نفر است. با استفاده از کد زیر عملیات <strong>پیمایش در
+				لیست</strong> را انجام می‌دهیم:</p>
+		<pre
+			class="wp-block-code  language-python"><code class=" language-python">names <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"Nazanin"</span><span class="token punctuation">,</span> <span class="token string">"Mehran"</span><span class="token punctuation">,</span> <span class="token string">"Omid"</span><span class="token punctuation">,</span> <span class="token string">"Melisa"</span><span class="token punctuation">,</span> <span class="token string">"sina"</span><span class="token punctuation">]</span>
+		<span class="token keyword">for</span> name <span class="token keyword">in</span> names<span class="token punctuation">:</span>
+			<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Hello "</span> <span class="token operator">+</span> name <span class="token operator">+</span> <span class="token string">"!"</span><span class="token punctuation">)</span></code></pre>
+		<p>خروجی اجرای این حلقه به صورت زیر خواهد بود:</p>
+		<div class="wp-block-image">
+			<figure class="aligncenter size-large"></noscript>
+				<figcaption>نتیجه اجرای مثال حلقه for پایتون</figcaption>
+			</figure>
+		</div>
+		<p><a href="" target="_blank" rel="noreferrer noopener">رشته در پایتون</a> هم یک مجموعه است؛ مجموعه‌ای از
+			کاراکترها که رشته متنی را شکل داده‌اند. بنابراین به کمک حلقه for in می‌توان بر روی تک تک کاراکترهای یک
+			رشته پیمایش انجام داد.</p>
+		<pre
+			class="wp-block-code  language-python"><code class=" language-python">string <span class="token operator">=</span> <span class="token string">""</span>
+		i <span class="token operator">=</span> <span class="token number">0</span>
+		<span class="token keyword">for</span> char <span class="token keyword">in</span> string<span class="token punctuation">:</span>
+			i<span class="token operator">+=</span><span class="token number">1</span>
+		
+		<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Lenght is: "</span> <span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+		<p>در قطعه کد بالا، با استفاده از حلقه for تعداد کاراکترهای رشته <span
+				class="has-inline-color has-blue-color">string</span> را محاسبه کردیم.</p>
+		<div class="sabz-box note-box yellow">
+			<p>به کمک <a href="">در پایتون</a> می‌توانید یک شئ قابل پیمایش در حلقه‌های python به دلخواه خود ایجاد کنید.
+			</p>
+		</div>
+		<h3 id="h-تابع-range"><span class="ez-toc-section" id="%D8%AA%D8%A7%D8%A8%D8%B9_range"></span>تابع
+			range<span class="ez-toc-section-end"></span></h3>
+		<p>فرض کنید می‌خواهیم یک حلقه for ایجاد کنیم که متغیر آن در هر بار اجرا، یکی افزایش پیدا کند. چیزی شبیه به
+			کاری که در حلقه while داشتیم.</p>
+		<p>فرض کنید می‌خواهیم با یک حلقه، حاصل جمع اعداد <span class="has-inline-color has-light-orange-color">1</span>
+			تا <span class="has-inline-color has-light-orange-color">9</span> را محاسبه کنیم.</p>
+		<p>اولین راه‌حل ایجاد یک لیست از اعداد متوالی به صورت دستی و استفاده از آن در حلقه for است.</p>
+		<pre
+			class="wp-block-code  language-python"><code class=" language-python">nums<span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">]</span>
+		result <span class="token operator">=</span> <span class="token number">0</span>
+		<span class="token keyword">for</span> n <span class="token keyword">in</span> nums<span class="token punctuation">:</span>
+			result <span class="token operator">+=</span> n
+		
+		<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span></code></pre>
+		<p>اما راه‌حل ساده‌تری هم داریم!</p>
+		<p>تابع <code>range()</code> یک لیست از اعداد صحیح ایجاد می‌کند. از این تابع می‌توان به طور مستقیم در حلقه
+			for در پایتون برای تولید یک رنج از اعداد (بازه عددی) استفاده کرد.</p>
+		<p>کد زیر دقیقاً معادل کد بالا بوده و عدد <span class="has-inline-color has-light-orange-color">45</span> را
+			به عنوان نتیجه به ما می‌دهد.</p>
+		<pre
+			class="wp-block-code  language-python"><code class=" language-python">result <span class="token operator">=</span> <span class="token number">0</span>
+		<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+			result <span class="token operator">+=</span> i
+		
+		<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span></code></pre>
+		<div class="sabz-box info-box blue">
+			<p>تابع <code>range(n)</code> به ما لیستی از اعداد 0 تا n-1 را می‌دهد.</p>
+		</div>
+		<p>از این تابع می‌توان به صورت حرفه‌ای‌تر هم استفاده کرد. ساختار کلی آن به صورت زیر است:</p>
+		<pre
+			class="wp-block-code  language-python"><code class=" language-python"><span class="token builtin">range</span><span class="token punctuation">(</span>start<span class="token punctuation">,</span> stop<span class="token punctuation">,</span> step<span class="token punctuation">)</span></code></pre>
+		<p>سه آرگومان ورودی این تابع عبارت‌اند از:</p>
+		<ul>
+			<li><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">start</mark>:
+				نقطه شروع شمارش</li>
+			<li><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">stop</mark>:
+				نقطه پایانی (این نقطه جزء توالی عددی نخواهد بود)</li>
+			<li><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">step</mark>:
+				گام حرکت از شروع تا پایان (اختیاری، پیش‌فرض عدد 1 در نظر گرفته می‌شود)</li>
+		</ul>
+		<div class="sabz-box info-box yellow">
+			<p>اگر فقط یک ورودی برای <code>range()</code> وارد شود، به طور پیش‌فرض مقدار شروع برابر 0 و گام برابر 1
+				خواهد بود.</p>
+		</div>
+		<p>به مثال‌های زیر از این تابع توجه کنید:</p>
+		<pre class="wp-block-code  language-python"><code class=" language-python"><span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">9</span><span class="token punctuation">)</span>
+		<span class="token comment"># [0, 1, 2, 3, 4, 5, 6, 7, 8]</span>
+		
+		<span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">21</span><span class="token punctuation">)</span>
+		<span class="token comment"># [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]</span>
+		
+		<span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">21</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span>
+		<span class="token comment"># [5, 8, 11, 14, 17, 20]</span></code></pre>
+		<div class="sabz-ads">
+		</div>
+		<h2 id="h-ترفندهای-کار-با-حلقه"><span class="ez-toc-section"
+				id="%D8%AA%D8%B1%D9%81%D9%86%D8%AF%D9%87%D8%A7%DB%8C_%DA%A9%D8%A7%D8%B1_%D8%A8%D8%A7_%D8%AD%D9%84%D9%82%D9%87"></span>ترفندهای
+			کار با حلقه<span class="ez-toc-section-end"></span></h2>
+		<p>در کار با <strong>حلقه در پایتون</strong> ترفندهای زیادی وجود دارد. اکثر این ترفندها به خلاقیت برنامه
+			نویس در هنگام برنامه‌نویسی برمی‌گردد.</p>
+		<p>برای این که بتوان به صورت حرفه‌ای‌تر با حلقه‌ها برنامه‌نویسی کنیم، دو دستور و یک ساختار مهم وجود دارد.
+		</p>
+		<p>در ادامه دو دستور <span class="has-inline-color has-blue-color">break</span> و <span
+				class="has-inline-color has-blue-color">continue</span> در حلقه‌ها و ساختار Nested Loops را بررسی
+			می‌کنیم.</p>
+		<h3 id="h-دستور-break-در-حلقه-پایتون"><span class="ez-toc-section"
+				id="%D8%AF%D8%B3%D8%AA%D9%88%D8%B1_break_%D8%AF%D8%B1_%D8%AD%D9%84%D9%82%D9%87_%D9%BE%D8%A7%DB%8C%D8%AA%D9%88%D9%86"></span>دستور
+			break در حلقه پایتون<span class="ez-toc-section-end"></span></h3>
+		<p>فرض کنید یک لیست از اعداد در اختیار داریم و می‌خواهیم آن را پیمایش کنیم. در صورتی که به یک عدد خاص
+			رسیدیم، پیمایش کل مجموعه خاتمه یابد.</p>
+		<p>بعد از آن که به عدد مورد نظر رسیدیم چه اتفاقی می‌افتد؟! باید به طور کامل از حلقه (<span
+				class="has-inline-color has-blue-color">for</span> یا <span
+				class="has-inline-color has-blue-color">while</span>) خارج شویم!</p>
+		<p>برای این که از حلقه خارج شویم، از دستور break استفاده می‌کنیم.</p>
+		<p>به محض رسیدن به دستور break بلافاصله از حلقه خارج شده و تکرارهای بعدی نادیده گرفته خواهد شد؛ بدون توجه به
+			این&nbsp;که در اولین تکرار حلقه هستیم یا آخرینِ آن!</p>
+		<p>معمولاً این‌گونه کارها به کمک <a href="" target="_blank" rel="noreferrer noopener">ساختارهای شرط در
+				پایتون</a> انجام می‌شود.</p>
+		<pre class="wp-block-code  language-python"><code class=" language-python">lst <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">]</span>
+		<span class="token keyword">for</span> i <span class="token keyword">in</span> lst<span class="token punctuation">:</span>
+			<span class="token keyword">if</span> i <span class="token operator">==</span> <span class="token number">5</span><span class="token punctuation">:</span>
+				<span class="token keyword">break</span>
+			<span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+		
+		<span class="token comment"># Result:</span>
+		<span class="token comment"># 1</span>
+		<span class="token comment"># 2</span>
+		<span class="token comment"># 3</span>
+		<span class="token comment"># 4</span></code></pre>
+		<p>خروجی این قطعه کد، فقط اعداد <span class="has-inline-color has-light-orange-color">1</span> تا <span
+				class="has-inline-color has-light-orange-color">4</span> هستند.</p>
+		<h3 id="h-استفاده-از-دستور-continue"><span class="ez-toc-section"
+				id="%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87_%D8%A7%D8%B2_%D8%AF%D8%B3%D8%AA%D9%88%D8%B1_continue"></span>استفاده
+			از دستور continue<span class="ez-toc-section-end"></span></h3>
+		<p>در همان مثال قبلی، اگر فقط بخواهیم یک عدد خاص چاپ نشود باید چه کاری انجام داد؟</p>
+		<p>اولین راه‌حل احتمالاً استفاده از شرط است. به این صورت که اگر عنصر انتخاب شده برابر 5 نبود، <a href=""
+				target="_blank" rel="noreferrer noopener">دستور print</a> اجرا شود.</p>
+		<p>راه‌حل دیگر استفاده از <span class="has-inline-color has-blue-color">دستور continue</span> است. با اجرای
+			continue در حلقه، بقیه کدهای بدنه حلقه اجرا نمی‌شود و مستقیماً به ابتدای تکرار بعدی در حلقه می‌پریم.</p>
+		<p>به قطعه کد زیر دقت کنید:</p>
+		<pre
+			class="wp-block-code  language-python"><code class=" language-python">lst <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">]</span>
+		<span class="token keyword">for</span> i <span class="token keyword">in</span> lst<span class="token punctuation">:</span>
+			<span class="token keyword">if</span> i <span class="token operator">==</span> <span class="token number">5</span><span class="token punctuation">:</span>
+				<span class="token keyword">continue</span>
+			<span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span></code></pre>
+		<p>نتیجه اجرای این کد به صورت زیر خواهد شد:</p>
+		<div class="wp-block-image">
+			<figure class="aligncenter size-large"></noscript>
+				<figcaption>مثال دستور continue در حلقه پایتون</figcaption>
+			</figure>
+		</div>
+		<p>همان‌طور که می‌بینید به غیر از عدد 5، بقیه اعداد لیست در خروجی چاپ شده‌اند.</p>
+		<h3 id="h-حلقه-تودرتو-در-پایتون"><span class="ez-toc-section"
+				id="%D8%AD%D9%84%D9%82%D9%87_%D8%AA%D9%88%D8%AF%D8%B1%D8%AA%D9%88_%D8%AF%D8%B1_%D9%BE%D8%A7%DB%8C%D8%AA%D9%88%D9%86"></span>حلقه
+			تودرتو در پایتون<span class="ez-toc-section-end"></span></h3>
+		<p>از حلقه‌های پایتون می‌توان به صورت تودرتو هم استفاده کرد. مثلاً برای پیمایش ماتریس می‌توان به صورت زیر
+			عمل کرد. توجه داشته باشید که محدوده کدهای بدنه حلقه در پایتون بر اساس همان دندانه‌گذاری (یا <span
+				class="has-inline-color has-blue-color">indentation</span>) مشخص می‌شود.</p>
+		<pre
+			class="wp-block-code  language-python"><code class=" language-python">mtrx <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+		x <span class="token operator">=</span> <span class="token number">0</span>
+		<span class="token keyword">for</span> i <span class="token keyword">in</span> mtrx<span class="token punctuation">:</span>
+			<span class="token keyword">for</span> j <span class="token keyword">in</span> i<span class="token punctuation">:</span>
+				x <span class="token operator">+=</span> j
+		
+		<span class="token keyword">print</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token comment">#45</span></code></pre>
+		<h2 id="h-مرور-آموزش-حلقه-ها-در-پایتون"><span class="ez-toc-section"
+				id="%D9%85%D8%B1%D9%88%D8%B1_%D8%A2%D9%85%D9%88%D8%B2%D8%B4_%D8%AD%D9%84%D9%82%D9%87_%D9%87%D8%A7_%D8%AF%D8%B1_%D9%BE%D8%A7%DB%8C%D8%AA%D9%88%D9%86"></span>مرور
+			آموزش حلقه ها در پایتون<span class="ez-toc-section-end"></span></h2>
+		<p>در این آموزش با نحوه تعریف حلقه در پایتون آشنا شدیم. یک loop دو بخش اصلی شرط و بدنه دارد. قبل از شرط،
+			می‌توانیم برای آن مقداردهی اولیه انجام دهیم. سپس مادامی که شرط برقرار باشد، کدهای درون بدنه حلقه اجرا
+			می‌شود. برای اینکه با مشکل حلقه بی‌نهایت مواجه نوشیم، بهتر است به چگونگی تغییر شرط توجه کنیم. معمولاً از
+			عملیات افزایش برای این کار استفاده می‌شود.</p>
+		<p>در هر با اجرای <strong>حلقه for در پایتون</strong>، متغیری که تعریف کرده‌ایم مقدار جدیدی گرفته و کدهای
+			بدنه برای آن مقدار اجرا می‌شوند. دقت کنید که می‌توانیم از این متغیر در بدنه هیچ استفاده‌ای نکنیم!
+			<strong>حلقه while در پایتون</strong>، مادامی که شرطش برقرار باشد اجرا می‌شود.
+		</p>
+		<p>علاوه بر حلقه‌ها، با تابع <code>range()</code> برای تولید لیستی از اعداد، دستور <span
+				class="has-inline-color has-navy-blue-color"><strong>break</strong></span> برای متوقف کردن اجرای
+			حلقه و دستور <span class="has-inline-color has-navy-blue-color"><strong>continue</strong></span> برای
+			پرش به حلقه بعدی آشنا شدیم.</p>
+
+	</article>
+
+
+
+
+	<div id="fh5co-page">
+		<a href="work.html#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+		<aside id="fh5co-aside" role="complementary" class="border js-fullheight" style="height: 100%;width: 15%;">
+			<h1 id="fh5co-logo"><a href="index.html"><img src="./images/logo.png" alt=""></a></h1>
+			<nav id="fh5co-main-menu" role="navigation">
+				<ul>
+					<li><a style="font-family:'b titr';" href="index.html">صفحه اصلی</a></li>
+					<li><a style="font-family:'b titr';" href="portfolio.html">زبان ها</a></li>
+					<li><a style="font-family:'b titr';" href="about.html">درباره</a></li>
+					<li><a style="font-family:'b titr';" href="contact.html">موضوع ها</a></li>
+				</ul>
+			</nav>
+			<div class="fh5co-footer">
+				<p><small>Developed by mehrabnovin </small></p>
+				<ul>
+					<li><a href="work.html#"><i class="icon-facebook"></i></a></li>
+					<li><a href="work.html#"><i class="icon-twitter"></i></a></li>
+					<li><a href="work.html#"><i class="icon-instagram"></i></a></li>
+					<li><a href="work.html#"><i class="icon-linkedin"></i></a></li>
+				</ul>
+			</div>
+		</aside>
+		<div id="fh5co-main">
+			<div class="fh5co-narrow-content">
+				<!----------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+				<div class="row work-pagination animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0">
+
+						<div class="col-md-4 col-sm-4 col-xs-4 text-center">
+							<a style="text-align:left;" href="var.html"><i class="icon-long-arrow-left"></i>
+								<span>مطلب قبلی</span></a>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-4 text-center">
+							<a style="text-align:right ;" href="content.html"><span>مطلب بعدی</span> <i
+									class="icon-long-arrow-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
